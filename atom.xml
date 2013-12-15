@@ -1,29 +1,211 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>{{ site.sitename }}</title>
-    <link href="{{ site.baseurl }}/atom.xml" rel="self"/>
-    <link href="{{ site.baseurl }}"/>
-    <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}</id>
+    <title>Codurance</title>
+    <link href="//atom.xml" rel="self"/>
+    <link href="/"/>
+    <updated>2013-12-15T21:56:30+00:00</updated>
+    <id>http://codurance.com</id>
     <author>
-        <name>{{ site.sitename }}</name>
-        <email>{{ site.email }}</email>
+        <name>Codurance</name>
+        <email>hello@codurance.com</email>
     </author>
-    <rights>Copyright (c) {{ site.sitename }}</rights>
-    {% for post in site.posts limit:15 %}
+    <rights>Copyright (c) Codurance</rights>
+    
     <entry>
-        <id>{{ post.url}}</id>
-        <title>{{ post.title }}</title>
-        <link href="{{ post.url }}"/>
-        <published>{{ post.date | date_to_xmlschema }}</published>
-        {% if post.excerpt %}
-        <summary type="html">{{ post.excerpt | markdownify | xml_escape }}</summary>
-        {% else %}
-        <content type="html">{{ post.content | xml_escape }}</content>
-        {% endif %}
+        <id>/blog/2013/11/starting-craftsmanship-communities/</id>
+        <title>Starting a Software Craftsmanship Community</title>
+        <link href="/blog/2013/11/starting-craftsmanship-communities/"/>
+        <published>2013-11-21T22:56:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That's it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
+
+</summary>
+        
     </entry>
-    {% endfor %}
+    
+    <entry>
+        <id>/blog/2013/08/test-deafness/</id>
+        <title>Test Deafness</title>
+        <link href="/blog/2013/08/test-deafness/"/>
+        <published>2013-08-23T02:26:00Z</published>
+        
+        <summary type="html">&lt;p&gt;A few months ago I was talking to a musician friend of mine. He is also
+Brazilian, same age as me, and moved to the UK on the same year I did.
+As we were talking about music, I mentioned I like punk rock. He said he
+likes punk rock as well, but as a musician, he listens to a bit of
+everything. The conversation was going well until he asked me what my
+favourite bands were. &quot;&lt;a href=&quot;http://en.wikipedia.org/wiki/Legi%C3%A3o_Urbana&quot;&gt;Legiao
+Urbana&lt;/a&gt;&quot; is my
+favourite Brazilian band I said. &quot;Seriously?&quot; he said with a puzzled
+face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2013/07/my-birthday-wish-list/</id>
+        <title>My birthday wish list</title>
+        <link href="/blog/2013/07/my-birthday-wish-list/"/>
+        <published>2013-07-29T23:46:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Today is my birthday. Yay! And since today is all about me, I will
+choose what I want as a present. As a developer, here's what I want:&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2013/02/project-documentation/</id>
+        <title>Project Documentation</title>
+        <link href="/blog/2013/02/project-documentation/"/>
+        <published>2013-02-07T17:59:29Z</published>
+        
+        <summary type="html">&lt;p&gt;Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it's a general question about a framework or library then I go for the Google.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2013/01/spring-integration-based-dispatcher-worker-with-worker-queues/</id>
+        <title>Spring Integration based Dispatcher-Worker with Worker Queues</title>
+        <link href="/blog/2013/01/spring-integration-based-dispatcher-worker-with-worker-queues/"/>
+        <published>2013-01-12T21:34:55Z</published>
+        
+        <summary type="html">&lt;p&gt;In the back-office world the central concept in most of the systems is one of a Trade. A Trade has many events (e.g. Inception, Amend, Novation, Termination). Generally events from different trades can be processed in parallel because they have no interdependencies, however, events from the same trade cannot be processed in parallel due to the fact that they modify the same internal instance of a Trade.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/12/the-wrong-notion-of-time/</id>
+        <title>The Wrong Notion of Time</title>
+        <link href="/blog/2012/12/the-wrong-notion-of-time/"/>
+        <published>2012-12-10T23:38:00Z</published>
+        
+        <summary type="html">&lt;p&gt;No one wakes up in the morning and say &quot;Today I'm gonna screw up. Today
+I'm gonna piss my boss and all my team mates off writing the worst code
+I could possibly write&quot;. Well, there are always exceptions but normally
+no one does that. If that is the case, how come Agile projects are now
+failing? How come do we still have the same old problems?&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/11/speed-reading/</id>
+        <title>Speed Reading</title>
+        <link href="/blog/2012/11/speed-reading/"/>
+        <published>2012-11-21T23:14:53Z</published>
+        
+        <summary type="html">&lt;p&gt;It's not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I've always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/09/the-spirit-to-improve/</id>
+        <title>The Spirit to Improve</title>
+        <link href="/blog/2012/09/the-spirit-to-improve/"/>
+        <published>2012-09-08T22:08:35Z</published>
+        
+        <summary type="html">&lt;p&gt;This week in our weekly design committee, on of the developer demonstrated how to use the Saxon Injectors to create mock XQuery functions for unit testing.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/08/encouraging-collaboration-via-design-committee/</id>
+        <title>Encouraging Collaboration via Design Committee</title>
+        <link href="/blog/2012/08/encouraging-collaboration-via-design-committee/"/>
+        <published>2012-08-14T22:50:42Z</published>
+        
+        <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it's life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/08/encouraging-collaboration-via-review-branches-and-pull-requests/</id>
+        <title>Encouraging Collaboration via Review Branches and Pull Requests</title>
+        <link href="/blog/2012/08/encouraging-collaboration-via-review-branches-and-pull-requests/"/>
+        <published>2012-08-11T18:04:02Z</published>
+        
+        <summary type="html">&lt;p&gt;I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/01/musings-on-zero-downtime-deployment/</id>
+        <title>Musings on Zero Downtime Deployment</title>
+        <link href="/blog/2012/01/musings-on-zero-downtime-deployment/"/>
+        <published>2012-01-14T23:11:43Z</published>
+        
+        <summary type="html">&lt;p&gt;I've been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2012/01/saxon-xquery-with-multiple-documents/</id>
+        <title>Saxon XQuery With Multiple Documents</title>
+        <link href="/blog/2012/01/saxon-xquery-with-multiple-documents/"/>
+        <published>2012-01-14T20:53:44Z</published>
+        
+        <summary type="html">&lt;p&gt;Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I'm always baffled with it's lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.
+[sourcecode language=&quot;java&quot;]
+@Test
+public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
+    Processor processor = new Processor(false);&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2011/10/the-difference-between-ui-designer-and-ui-developer/</id>
+        <title>The difference between UI Designer and UI Developer</title>
+        <link href="/blog/2011/10/the-difference-between-ui-designer-and-ui-developer/"/>
+        <published>2011-10-21T23:29:50Z</published>
+        
+        <summary type="html">&lt;p&gt;In a previous post I talked about developers distinguishing themselves as specialists in a particular part of the application e.g. server side, gui, database etc. This kind of specialisation is counter productive to creating good software. However, there are roles where the specialisation is important.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2011/10/the-legacy-of-misplaced-testing/</id>
+        <title>The legacy of misplaced Testing</title>
+        <link href="/blog/2011/10/the-legacy-of-misplaced-testing/"/>
+        <published>2011-10-18T22:10:49Z</published>
+        
+        <summary type="html">&lt;p&gt;Recently I've been exposed to a number of projects that have been going on for a few years. As you'd expect they are at a stage where the cost of change is phenomenal. The codebase is large, convoluted and very difficult to understand. However, there are a lot of tests both at the system and unit level. A sigh of relief - if the code has a lot of tests then at least that would make refactoring easier. The reality is very different - the tests are even more complicated then the code and significantly add to the cost of change.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
+    <entry>
+        <id>/blog/2011/10/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/</id>
+        <title>Design aligned to the Problem Vs Design aligned to the Technology</title>
+        <link href="/blog/2011/10/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/"/>
+        <published>2011-10-15T20:02:19Z</published>
+        
+        <summary type="html">&lt;p&gt;Lets develop a web app from start: Well I know Java pretty well so it's going to be Java and then the de facto design is Spring + Hibernate with Spring MVC. I know I'll push the boat out get some AJAX in the mix. Wait I'm no &quot;GUI developer&quot; so let's go for GWT it'll generate my Javascript.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
+    
 </feed>
