@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2013-12-19T23:40:09+00:00</updated>
+    <updated>2014-01-22T13:19:50+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/blog/2014/01/samir-talwar-joined/</id>
+        <title>Samir Talwar is our first craftsman</title>
+        <link href="/blog/2014/01/samir-talwar-joined/"/>
+        <published>2014-01-21T15:20:00Z</published>
+        
+        <summary type="html">&lt;p&gt;We are very happy to announce that &lt;a href=&quot;https://twitter.com/samirtalwar&quot;&gt;Samir Talwar&lt;/a&gt; is joining us as our first craftsman. Mash and I first met Samir back in October 2010, when he joined &lt;a href=&quot;http://londonswcraft.com&quot;&gt;LSCC&lt;/a&gt;. Samir became a very active LSCC member, ran many technical sessions, became an LSCC Associate, and is now part of the LSCC organisation team.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/blog/2013/11/starting-craftsmanship-communities/</id>
@@ -191,18 +203,6 @@ public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
         <published>2011-10-18T22:10:49Z</published>
         
         <summary type="html">&lt;p&gt;Recently I've been exposed to a number of projects that have been going on for a few years. As you'd expect they are at a stage where the cost of change is phenomenal. The codebase is large, convoluted and very difficult to understand. However, there are a lot of tests both at the system and unit level. A sigh of relief - if the code has a lot of tests then at least that would make refactoring easier. The reality is very different - the tests are even more complicated then the code and significantly add to the cost of change.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/blog/2011/10/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/</id>
-        <title>Design aligned to the Problem Vs Design aligned to the Technology</title>
-        <link href="/blog/2011/10/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/"/>
-        <published>2011-10-15T20:02:19Z</published>
-        
-        <summary type="html">&lt;p&gt;Lets develop a web app from start: Well I know Java pretty well so it's going to be Java and then the de facto design is Spring + Hibernate with Spring MVC. I know I'll push the boat out get some AJAX in the mix. Wait I'm no &quot;GUI developer&quot; so let's go for GWT it'll generate my Javascript.&lt;/p&gt;
 
 </summary>
         
