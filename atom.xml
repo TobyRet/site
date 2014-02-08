@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-07T15:38:04+00:00</updated>
+    <updated>2014-02-08T16:55:23+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/blog/2014/02/resist-the-just-in-case/</id>
+        <title>Resist the "Just in Case"</title>
+        <link href="/blog/2014/02/resist-the-just-in-case/"/>
+        <published>2014-02-08T16:50:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Of all the projects I have worked on a big regret has been; adding complexity where it was not needed. I was recently reminded of, how easy it is to fall into that trap.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/blog/2014/01/samir-talwar-joined/</id>
@@ -191,18 +203,6 @@ public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
         <published>2011-10-21T23:29:50Z</published>
         
         <summary type="html">&lt;p&gt;In a previous post I talked about developers distinguishing themselves as specialists in a particular part of the application e.g. server side, gui, database etc. This kind of specialisation is counter productive to creating good software. However, there are roles where the specialisation is important.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/blog/2011/10/the-legacy-of-misplaced-testing/</id>
-        <title>The legacy of misplaced Testing</title>
-        <link href="/blog/2011/10/the-legacy-of-misplaced-testing/"/>
-        <published>2011-10-18T22:10:49Z</published>
-        
-        <summary type="html">&lt;p&gt;Recently I've been exposed to a number of projects that have been going on for a few years. As you'd expect they are at a stage where the cost of change is phenomenal. The codebase is large, convoluted and very difficult to understand. However, there are a lot of tests both at the system and unit level. A sigh of relief - if the code has a lot of tests then at least that would make refactoring easier. The reality is very different - the tests are even more complicated then the code and significantly add to the cost of change.&lt;/p&gt;
 
 </summary>
         
