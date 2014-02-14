@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-11T16:58:32+00:00</updated>
+    <updated>2014-02-14T15:52:35+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -41,7 +41,7 @@
         <link href="/blog/2013/11/starting-craftsmanship-communities/"/>
         <published>2013-11-21T22:56:00Z</published>
         
-        <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That's it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
+        <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That&#39;s it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
 
 </summary>
         
@@ -74,7 +74,7 @@ face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
         <published>2013-07-29T23:46:00Z</published>
         
         <summary type="html">&lt;p&gt;Today is my birthday. Yay! And since today is all about me, I will
-choose what I want as a present. As a developer, here's what I want:&lt;/p&gt;
+choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&gt;
 
 </summary>
         
@@ -86,7 +86,7 @@ choose what I want as a present. As a developer, here's what I want:&lt;/p&gt;
         <link href="/blog/2013/02/project-documentation/"/>
         <published>2013-02-07T17:59:29Z</published>
         
-        <summary type="html">&lt;p&gt;Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it's a general question about a framework or library then I go for the Google.&lt;/p&gt;
+        <summary type="html">&lt;p&gt;Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it&#39;s a general question about a framework or library then I go for the Google.&lt;/p&gt;
 
 </summary>
         
@@ -110,8 +110,8 @@ choose what I want as a present. As a developer, here's what I want:&lt;/p&gt;
         <link href="/blog/2012/12/the-wrong-notion-of-time/"/>
         <published>2012-12-10T23:38:00Z</published>
         
-        <summary type="html">&lt;p&gt;No one wakes up in the morning and say &quot;Today I'm gonna screw up. Today
-I'm gonna piss my boss and all my team mates off writing the worst code
+        <summary type="html">&lt;p&gt;No one wakes up in the morning and say &quot;Today I&#39;m gonna screw up. Today
+I&#39;m gonna piss my boss and all my team mates off writing the worst code
 I could possibly write&quot;. Well, there are always exceptions but normally
 no one does that. If that is the case, how come Agile projects are now
 failing? How come do we still have the same old problems?&lt;/p&gt;
@@ -126,7 +126,7 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <link href="/blog/2012/11/speed-reading/"/>
         <published>2012-11-21T23:14:53Z</published>
         
-        <summary type="html">&lt;p&gt;It's not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I've always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
+        <summary type="html">&lt;p&gt;It&#39;s not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I&#39;ve always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
 
 </summary>
         
@@ -150,7 +150,7 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <link href="/blog/2012/08/encouraging-collaboration-via-design-committee/"/>
         <published>2012-08-14T22:50:42Z</published>
         
-        <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it's life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
+        <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it&#39;s life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
 
 </summary>
         
@@ -174,7 +174,7 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <link href="/blog/2012/01/musings-on-zero-downtime-deployment/"/>
         <published>2012-01-14T23:11:43Z</published>
         
-        <summary type="html">&lt;p&gt;I've been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
+        <summary type="html">&lt;p&gt;I&#39;ve been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
 
 </summary>
         
@@ -186,7 +186,7 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <link href="/blog/2012/01/saxon-xquery-with-multiple-documents/"/>
         <published>2012-01-14T20:53:44Z</published>
         
-        <summary type="html">&lt;p&gt;Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I'm always baffled with it's lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.
+        <summary type="html">&lt;p&gt;Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I&#39;m always baffled with it&#39;s lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.
 [sourcecode language=&quot;java&quot;]
 @Test
 public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
