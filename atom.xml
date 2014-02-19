@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-19T17:42:47+00:00</updated>
+    <updated>2014-02-19T17:52:09+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/blog/2014/02/pairing-without-programming/</id>
+        <title>Pairing without Programming</title>
+        <link href="/blog/2014/02/pairing-without-programming/"/>
+        <published>2014-02-19T17:00:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Pairing is often associated with programming. There&#39;s a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it&#39;s a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/blog/2014/02/resist-the-just-in-case/</id>
@@ -191,18 +203,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
 @Test
 public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
     Processor processor = new Processor(false);&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/blog/2011/10/the-difference-between-ui-designer-and-ui-developer/</id>
-        <title>The difference between UI Designer and UI Developer</title>
-        <link href="/blog/2011/10/the-difference-between-ui-designer-and-ui-developer/"/>
-        <published>2011-10-21T23:29:50Z</published>
-        
-        <summary type="html">&lt;p&gt;In a previous post I talked about developers distinguishing themselves as specialists in a particular part of the application e.g. server side, gui, database etc. This kind of specialisation is counter productive to creating good software. However, there are roles where the specialisation is important.&lt;/p&gt;
 
 </summary>
         

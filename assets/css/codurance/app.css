@@ -4,6 +4,10 @@
 .standout {
   color: #e67e22;
 }
+.blog .blog-image-attr {
+  font-size: 0.75em;
+  text-align: center;
+}
 .careers h1 {
   color: #e67e22;
 }
