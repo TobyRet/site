@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-20T17:54:29+00:00</updated>
+    <updated>2014-02-21T12:01:39+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -12,9 +12,9 @@
     <rights>Copyright (c) Codurance</rights>
     
     <entry>
-        <id>/blog/2014/02/pairing-without-programming/</id>
+        <id>/2014/02/19/pairing-without-programming/</id>
         <title>Pairing without Programming</title>
-        <link href="/blog/2014/02/pairing-without-programming/"/>
+        <link href="/2014/02/19/pairing-without-programming/"/>
         <published>2014-02-19T17:00:00Z</published>
         
         <summary type="html">&lt;p&gt;Pairing is often associated with programming. There&#39;s a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it&#39;s a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.&lt;/p&gt;
@@ -24,9 +24,9 @@
     </entry>
     
     <entry>
-        <id>/blog/2014/02/resist-the-just-in-case/</id>
+        <id>/2014/02/08/resist-the-just-in-case/</id>
         <title>Resist the "Just in Case"</title>
-        <link href="/blog/2014/02/resist-the-just-in-case/"/>
+        <link href="/2014/02/08/resist-the-just-in-case/"/>
         <published>2014-02-08T16:50:00Z</published>
         
         <summary type="html">&lt;p&gt;Of all the projects I have worked on a big regret has been; adding complexity where it was not needed. I was recently reminded of, how easy it is to fall into that trap.&lt;/p&gt;
@@ -36,9 +36,9 @@
     </entry>
     
     <entry>
-        <id>/blog/2014/01/samir-talwar-joined/</id>
+        <id>/2014/01/21/samir-talwar-joined/</id>
         <title>Samir Talwar is our first craftsman</title>
-        <link href="/blog/2014/01/samir-talwar-joined/"/>
+        <link href="/2014/01/21/samir-talwar-joined/"/>
         <published>2014-01-21T15:20:00Z</published>
         
         <summary type="html">&lt;p&gt;We are very happy to announce that &lt;a href=&quot;https://twitter.com/samirtalwar&quot;&gt;Samir Talwar&lt;/a&gt; is joining us as our first craftsman. Mash and I first met Samir back in October 2010, when he joined &lt;a href=&quot;http://londonswcraft.com&quot;&gt;LSCC&lt;/a&gt;. Samir became a very active LSCC member, ran many technical sessions, became an LSCC Associate, and is now part of the LSCC organisation team.&lt;/p&gt;
@@ -48,9 +48,9 @@
     </entry>
     
     <entry>
-        <id>/blog/2013/11/starting-craftsmanship-communities/</id>
+        <id>/2013/11/21/starting-craftsmanship-communities/</id>
         <title>Starting a Software Craftsmanship Community</title>
-        <link href="/blog/2013/11/starting-craftsmanship-communities/"/>
+        <link href="/2013/11/21/starting-craftsmanship-communities/"/>
         <published>2013-11-21T22:56:00Z</published>
         
         <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That&#39;s it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
@@ -60,9 +60,9 @@
     </entry>
     
     <entry>
-        <id>/blog/2013/08/test-deafness/</id>
+        <id>/2013/08/23/test-deafness/</id>
         <title>Test Deafness</title>
-        <link href="/blog/2013/08/test-deafness/"/>
+        <link href="/2013/08/23/test-deafness/"/>
         <published>2013-08-23T02:26:00Z</published>
         
         <summary type="html">&lt;p&gt;A few months ago I was talking to a musician friend of mine. He is also
@@ -80,9 +80,9 @@ face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2013/07/my-birthday-wish-list/</id>
+        <id>/2013/07/29/my-birthday-wish-list/</id>
         <title>My birthday wish list</title>
-        <link href="/blog/2013/07/my-birthday-wish-list/"/>
+        <link href="/2013/07/29/my-birthday-wish-list/"/>
         <published>2013-07-29T23:46:00Z</published>
         
         <summary type="html">&lt;p&gt;Today is my birthday. Yay! And since today is all about me, I will
@@ -93,9 +93,9 @@ choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&g
     </entry>
     
     <entry>
-        <id>/blog/2013/02/project-documentation/</id>
+        <id>/2013/02/07/project-documentation/</id>
         <title>Project Documentation</title>
-        <link href="/blog/2013/02/project-documentation/"/>
+        <link href="/2013/02/07/project-documentation/"/>
         <published>2013-02-07T17:59:29Z</published>
         
         <summary type="html">&lt;p&gt;Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it&#39;s a general question about a framework or library then I go for the Google.&lt;/p&gt;
@@ -105,9 +105,9 @@ choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&g
     </entry>
     
     <entry>
-        <id>/blog/2013/01/spring-integration-based-dispatcher-worker-with-worker-queues/</id>
+        <id>/development/2013/01/12/spring-integration-based-dispatcher-worker-with-worker-queues/</id>
         <title>Spring Integration based Dispatcher-Worker with Worker Queues</title>
-        <link href="/blog/2013/01/spring-integration-based-dispatcher-worker-with-worker-queues/"/>
+        <link href="/development/2013/01/12/spring-integration-based-dispatcher-worker-with-worker-queues/"/>
         <published>2013-01-12T21:34:55Z</published>
         
         <summary type="html">&lt;p&gt;In the back-office world the central concept in most of the systems is one of a Trade. A Trade has many events (e.g. Inception, Amend, Novation, Termination). Generally events from different trades can be processed in parallel because they have no interdependencies, however, events from the same trade cannot be processed in parallel due to the fact that they modify the same internal instance of a Trade.&lt;/p&gt;
@@ -117,9 +117,9 @@ choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&g
     </entry>
     
     <entry>
-        <id>/blog/2012/12/the-wrong-notion-of-time/</id>
+        <id>/2012/12/10/the-wrong-notion-of-time/</id>
         <title>The Wrong Notion of Time</title>
-        <link href="/blog/2012/12/the-wrong-notion-of-time/"/>
+        <link href="/2012/12/10/the-wrong-notion-of-time/"/>
         <published>2012-12-10T23:38:00Z</published>
         
         <summary type="html">&lt;p&gt;No one wakes up in the morning and say &quot;Today I&#39;m gonna screw up. Today
@@ -133,9 +133,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/11/speed-reading/</id>
+        <id>/2012/11/21/speed-reading/</id>
         <title>Speed Reading</title>
-        <link href="/blog/2012/11/speed-reading/"/>
+        <link href="/2012/11/21/speed-reading/"/>
         <published>2012-11-21T23:14:53Z</published>
         
         <summary type="html">&lt;p&gt;It&#39;s not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I&#39;ve always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
@@ -145,9 +145,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/09/the-spirit-to-improve/</id>
+        <id>/development%20process/2012/09/08/the-spirit-to-improve/</id>
         <title>The Spirit to Improve</title>
-        <link href="/blog/2012/09/the-spirit-to-improve/"/>
+        <link href="/development%20process/2012/09/08/the-spirit-to-improve/"/>
         <published>2012-09-08T22:08:35Z</published>
         
         <summary type="html">&lt;p&gt;This week in our weekly design committee, on of the developer demonstrated how to use the Saxon Injectors to create mock XQuery functions for unit testing.&lt;/p&gt;
@@ -157,9 +157,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/08/encouraging-collaboration-via-design-committee/</id>
+        <id>/development%20process/2012/08/14/encouraging-collaboration-via-design-committee/</id>
         <title>Encouraging Collaboration via Design Committee</title>
-        <link href="/blog/2012/08/encouraging-collaboration-via-design-committee/"/>
+        <link href="/development%20process/2012/08/14/encouraging-collaboration-via-design-committee/"/>
         <published>2012-08-14T22:50:42Z</published>
         
         <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it&#39;s life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
@@ -169,9 +169,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/08/encouraging-collaboration-via-review-branches-and-pull-requests/</id>
+        <id>/development%20process/2012/08/11/encouraging-collaboration-via-review-branches-and-pull-requests/</id>
         <title>Encouraging Collaboration via Review Branches and Pull Requests</title>
-        <link href="/blog/2012/08/encouraging-collaboration-via-review-branches-and-pull-requests/"/>
+        <link href="/development%20process/2012/08/11/encouraging-collaboration-via-review-branches-and-pull-requests/"/>
         <published>2012-08-11T18:04:02Z</published>
         
         <summary type="html">&lt;p&gt;I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.&lt;/p&gt;
@@ -181,9 +181,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/01/musings-on-zero-downtime-deployment/</id>
+        <id>/development/2012/01/14/musings-on-zero-downtime-deployment/</id>
         <title>Musings on Zero Downtime Deployment</title>
-        <link href="/blog/2012/01/musings-on-zero-downtime-deployment/"/>
+        <link href="/development/2012/01/14/musings-on-zero-downtime-deployment/"/>
         <published>2012-01-14T23:11:43Z</published>
         
         <summary type="html">&lt;p&gt;I&#39;ve been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
@@ -193,9 +193,9 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
     </entry>
     
     <entry>
-        <id>/blog/2012/01/saxon-xquery-with-multiple-documents/</id>
+        <id>/development/2012/01/14/saxon-xquery-with-multiple-documents/</id>
         <title>Saxon XQuery With Multiple Documents</title>
-        <link href="/blog/2012/01/saxon-xquery-with-multiple-documents/"/>
+        <link href="/development/2012/01/14/saxon-xquery-with-multiple-documents/"/>
         <published>2012-01-14T20:53:44Z</published>
         
         <summary type="html">&lt;p&gt;Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I&#39;m always baffled with it&#39;s lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.

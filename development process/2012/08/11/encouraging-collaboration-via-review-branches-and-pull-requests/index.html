@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Codurance - Encouraging Collaboration via Review Branches and Pull Requests</title>
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/codurance/app.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/pages/blog.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_magazine.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46289079-1', 'codurance.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<div class="top">
+    <div class="container">
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/casestudies">Case Studies</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                        <li><a href="/aboutus/ourteam">Our Team</a></li>
+                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                    </ul></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/careers/craftsman">Careers</a></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div><!-- /navbar-collapse -->
+        </div>
+    </div>
+</div><!--/header-->
+
+
+
+<!--=== End Header ===-->
+
+
+<div class="breadcrumbs margin-bottom-10">
+    <div class="container">
+        <h2 class="pull-left">Encouraging Collaboration via Review Branches and Pull Requests</h2>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/blog">Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<!--=== Content Part ===-->
+<div class="container">
+<div class="row blog-page blog-item">
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
+    <!--Blog Post-->
+    <div class="blog margin-bottom-40">
+        
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i> 11 Aug 2012</li>
+                <li><i class="icon-pencil"></i> Mashooq Badar</li>
+            </ul>
+        </div>
+        
+        <p>I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.</p>
+
+<p>Collaboration is the key. Especially if the system under development is new and going through constant evolution. Although one can argue that healthy systems must always be in a constant state of evolution.</p>
+
+<p>In these cases a good level of collaboration within the team is difficult but achievable. Collaboration across teams is near enough impossible unless we setup explicit processes that encourages such behaviour.</p>
+
+<p>The use of Pull Requests and Review Branches is one such process. Review Branches are essentially very short lived branches, often only lasting a few hours and never longer than a day. The main purpose of the branch is to develop in the smallest increment that is reasonable for the purposes of a review. The development of a single feature would typically result in a number of these branches. The mechanism for inviting others to review a branch and merge into master is known as a Pull Request.</p>
+
+<p>The principle behind the Review Branch is that the codebase is small enough to allow for an effective review by someone in 15 minutes max. In the first instance all members of the teams other than your own are invited to do the review. Once one or two people have agreed to do the review they will then sit with the developer to go through the changes and merge them to master after a successful review. In case of geographical separated teams desktop sharing technologies and conference facilities should be used. If no one volunteers within 5 or 10 minutes then you can invite your own team member to do the review.</p>
+
+<p>The primary reason is to share the knowledge across teams via the review process. Quality assurance is a side effect of this process.</p>
+
+<p>We have found that it often helps if you ask for a "review buddy" who will pick all your pull/review requests for a particular feature. This will help speed up the process and stop you from going over the same ground with different reviewers.</p>
+
+<p>Also team members should report in their daily standup the number of pull requests they have reviewed during the previous day and in scrums of scrums the team should report the number of pull requests each team review. They should also report the number of pull requests that were left unanswered within the agreed time limit. This will allow for rebalancing if certain individuals or teams are taking most of the reviews and others are reluctant to volunteer. Needless to say the reviews should be planned in as part of your capacity planning.</p>
+
+    </div>
+    <!--End Blog Post-->
+</div>
+<!-- End Left Sidebar -->
+
+<!-- Right Sidebar -->
+<div class="col-md-3 magazine-page">
+    <!-- Blog Latest Tweets -->
+    <div class="blog-twitter margin-bottom-30">
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- End Blog Latest Tweets -->
+</div>
+<!-- End Right Sidebar -->
+</div>
+<!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copyright-space">
+                    2013 &copy; Codurance LTD.
+                     | Company Registration No: 8712584
+                     | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <ul class="social-icons pull-right">
+                    <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
+                </ul>
+            </div>
+        </div> <!--/row-->
+    </div> <!--/container-->
+</div><!--/copyright-->
+
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>

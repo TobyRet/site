@@ -1,185 +1,199 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://codurance.com/blog/2009/04/userstories-and-when-enough-is-enough/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development/2009/04/14/userstories-and-when-enough-is-enough/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2009/04/configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug/
+            http://codurance.com/development/2009/04/17/configuring-a-war-project-in-eclipse-setting-up-jetty-to-rundebug/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2010/01/using-jira-for-agile-project-management-without-green-hopper/
+            http://codurance.com/development%20process/2010/01/04/using-jira-for-agile-project-management-without-green-hopper/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/01/creating-and-using-a-maven-archetype/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/01/find-the-jar-file-containing-a-class/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/02/maven-mutli-project-thought-and-guidelines/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/02/jvm-profiling-thread-dumps/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2010/03/the-relationship-between-product-owner-business-analyst-and-tester/
+            http://codurance.com/development/2010/01/06/creating-and-using-a-maven-archetype/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/05/approach-to-performance-tuning/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/05/naming-your-unit-tests/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2010/06/defining-and-prioritising-a-backlog/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2011/05/open-source-developers-deserve-respect/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2011/10/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/
+            http://codurance.com/development/2010/01/13/find-the-jar-file-containing-a-class/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2011/10/the-legacy-of-misplaced-testing/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2011/10/the-difference-between-ui-designer-and-ui-developer/
+            http://codurance.com/development/2010/02/16/maven-mutli-project-thought-and-guidelines/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2012/01/saxon-xquery-with-multiple-documents/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2012/01/musings-on-zero-downtime-deployment/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>http://codurance.com/development/2010/02/26/jvm-profiling-thread-dumps/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2012/08/encouraging-collaboration-via-review-branches-and-pull-requests/
+            http://codurance.com/development%20process/2010/03/03/the-relationship-between-product-owner-business-analyst-and-tester/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2012/08/encouraging-collaboration-via-design-committee/
+            http://codurance.com/development%20process/2010/05/20/approach-to-performance-tuning/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2012/09/the-spirit-to-improve/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2012/11/speed-reading/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/blog/2012/12/the-wrong-notion-of-time/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>http://codurance.com/development/2010/05/27/naming-your-unit-tests/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>
-            http://codurance.com/blog/2013/01/spring-integration-based-dispatcher-worker-with-worker-queues/
+            http://codurance.com/development%20process/2010/06/03/defining-and-prioritising-a-backlog/
         </loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2013/02/project-documentation/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>http://codurance.com/2011/05/05/open-source-developers-deserve-respect/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2013/07/my-birthday-wish-list/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development/2011/10/15/design-aligned-to-the-problem-vs-design-aligned-to-the-technology/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2013/08/test-deafness/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>http://codurance.com/development/2011/10/18/the-legacy-of-misplaced-testing/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2013/11/starting-craftsmanship-communities/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development/2011/10/21/the-difference-between-ui-designer-and-ui-developer/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2014/01/samir-talwar-joined/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development/2012/01/14/saxon-xquery-with-multiple-documents/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2014/02/resist-the-just-in-case/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development/2012/01/14/musings-on-zero-downtime-deployment/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/blog/2014/02/pairing-without-programming/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development%20process/2012/08/11/encouraging-collaboration-via-review-branches-and-pull-requests/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/404.html</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
+        <loc>
+            http://codurance.com/development%20process/2012/08/14/encouraging-collaboration-via-design-committee/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/careers/careers/apprentice.html</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
+        <loc>http://codurance.com/development%20process/2012/09/08/the-spirit-to-improve/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
-        <loc>http://codurance.com/careers/careers/craftsman.html</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
+        <loc>http://codurance.com/2012/11/21/speed-reading/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2012/12/10/the-wrong-notion-of-time/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://codurance.com/development/2013/01/12/spring-integration-based-dispatcher-worker-with-worker-queues/
+        </loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2013/02/07/project-documentation/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2013/07/29/my-birthday-wish-list/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2013/08/23/test-deafness/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2013/11/21/starting-craftsmanship-communities/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2014/01/21/samir-talwar-joined/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2014/02/08/resist-the-just-in-case/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/2014/02/19/pairing-without-programming/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/casestudies/</loc>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/aboutus/aboutus/ourpractices/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/aboutus/aboutus/ourteam/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/aboutus/aboutus/ourcompany/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/404/</loc>
+        <lastmod>2014-02-21T11:56:55+00:00</lastmod>
     </url>
     <url>
         <loc>http://codurance.com/</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/careers/careers/craftsman/</loc>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/careers/careers/apprentice/</loc>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/services/</loc>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codurance.com/services/training/services/training/crafting-code-2-days/</loc>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
     </url>
     <url>
         <loc>http://codurance.com/blog/blog/</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/aboutus/ourpractices/aboutus/ourpractices/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/aboutus/ourcompany/aboutus/ourcompany/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/aboutus/ourteam/aboutus/ourteam/</loc>
-        <lastmod>2014-02-20T17:49:39+00:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://codurance.com/services/training/crafting-code-2-days/services/training/crafting-code-2-days/
-        </loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/services/services/</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://codurance.com/casestudies/casestudies/</loc>
-        <lastmod>2014-02-20T17:49:40+00:00</lastmod>
+        <lastmod>2014-02-21T11:56:56+00:00</lastmod>
     </url>
 </urlset>
