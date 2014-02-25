@@ -26,3 +26,8 @@
 .page aside {
   border-left: 1px solid #ccc;
 }
+.training img.resize {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+}
