@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-02-25T16:11:43+00:00</updated>
+    <updated>2014-03-03T11:50:40+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/03/03/craftsmanship-book-released/</id>
+        <title>Software Craftsmanship book is now finished</title>
+        <link href="/2014/03/03/craftsmanship-book-released/"/>
+        <published>2014-03-03T11:37:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Yesterday a wonderful 19-month journey came to an end. I released the last chapter of my book &lt;a href=&quot;http://leanpub.com/socra&quot;&gt;Software Craftsmanship: Professionalism, Pragmatism, Pride&lt;/a&gt;. As an avid reader since a young age, writing a book was always something I wanted to do. For me, it didn&#39;t matter if people would read it or not; I just wanted to write a book I was proud of. I wanted to write a book that would help developers and companies to get better. A book that could inspire developers to care about their craft. I also wanted a book that my kids, at some point in the future, could read and be inspired, even if they had chosen different professions. I&#39;m not sure if they will read it or be inspired by it, but at least I&#39;m giving my best shot.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/02/19/pairing-without-programming/</id>
@@ -187,22 +199,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <published>2012-01-14T23:11:43Z</published>
         
         <summary type="html">&lt;p&gt;I&#39;ve been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/development/2012/01/14/saxon-xquery-with-multiple-documents/</id>
-        <title>Saxon XQuery With Multiple Documents</title>
-        <link href="/development/2012/01/14/saxon-xquery-with-multiple-documents/"/>
-        <published>2012-01-14T20:53:44Z</published>
-        
-        <summary type="html">&lt;p&gt;Saxon is a wonderful API for XML processing. It provides complete support for XPath, XQuery and XSLT. Although I&#39;m always baffled with it&#39;s lack of adoption compared to Xalan and Xerces. Having said that the online documentation can definitely do with some improvement.  The following is a quick example of of how you may execute an XQuery that takes multiple XML documents as input.
-[sourcecode language=&quot;java&quot;]
-@Test
-public void runXQueryWithMultipleInputDocuments() throws SaxonApiException {
-    Processor processor = new Processor(false);&lt;/p&gt;
 
 </summary>
         
