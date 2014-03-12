@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-03-03T11:50:40+00:00</updated>
+    <updated>2014-03-12T00:01:46+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/03/11/just-another-day-in-the-office/</id>
+        <title>Just another day in the office</title>
+        <link href="/2014/03/11/just-another-day-in-the-office/"/>
+        <published>2014-03-11T20:00:00Z</published>
+        
+        <summary type="html">&lt;p&gt;On 4th of March 2014, a few days before my baby boy Samuel completed two months, a well-regarded cardiologist—let&#39;s call him &lt;em&gt;Dr. Smith&lt;/em&gt;—gave us the news that Samuel had a heart condition called &lt;a href=&quot;http://en.wikipedia.org/wiki/Pulmonary_valve_stenosis&quot;&gt;pulmonary valve stenosis&lt;/a&gt;. Dr. Smith&#39;s recommendation was that Samuel had a heart procedure called &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;balloon pulmonary valvotomy&lt;/a&gt; or &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;ballon valvuloplasty&lt;/a&gt; as soon as possible. The procedure was scheduled to 11th of March 2014, on &lt;a href=&quot;http://theharleystreetclinic.co.uk/&quot;&gt;The Harley Street Clinic&lt;/a&gt;. Needless to say, the whole family was devastated.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/03/03/craftsmanship-book-released/</id>
@@ -187,18 +199,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <published>2012-08-11T18:04:02Z</published>
         
         <summary type="html">&lt;p&gt;I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/development/2012/01/14/musings-on-zero-downtime-deployment/</id>
-        <title>Musings on Zero Downtime Deployment</title>
-        <link href="/development/2012/01/14/musings-on-zero-downtime-deployment/"/>
-        <published>2012-01-14T23:11:43Z</published>
-        
-        <summary type="html">&lt;p&gt;I&#39;ve been thinking about Zero Downtime Deployment for the past few weeks. I even raised it as a discussion topic in our &lt;a href=&quot;http://www.meetup.com/london-software-craftsmanship/&quot;&gt;LSCC&lt;/a&gt; Roundtable. Here are the key points discussed. Obviously the feasibility/suitability completely depends on the application and platform architecture. Also this is not an attempt to provide a solution but more to record the thoughts and ideas:&lt;/p&gt;
 
 </summary>
         
