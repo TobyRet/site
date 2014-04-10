@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-03-13T10:06:54+00:00</updated>
+    <updated>2014-04-10T14:42:44+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/04/10/keeping-the-domain-in-core/</id>
+        <title>Keeping the domain in the core</title>
+        <link href="/2014/04/10/keeping-the-domain-in-core/"/>
+        <published>2014-04-10T00:30:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Inspired by Alistair Cockburn&#39;s excellent &lt;a href=&quot;http://alistair.cockburn.us/Hexagonal+architecture&quot;&gt;article&lt;/a&gt; on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/03/11/just-another-day-at-the-office/</id>
@@ -187,18 +199,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <published>2012-08-14T22:50:42Z</published>
         
         <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it&#39;s life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/development%20process/2012/08/11/encouraging-collaboration-via-review-branches-and-pull-requests/</id>
-        <title>Encouraging Collaboration via Review Branches and Pull Requests</title>
-        <link href="/development%20process/2012/08/11/encouraging-collaboration-via-review-branches-and-pull-requests/"/>
-        <published>2012-08-11T18:04:02Z</published>
-        
-        <summary type="html">&lt;p&gt;I have always advocated the use of a small well balanced team for projects rather than many less experienced ones. However this is not always possible. Some time projects require a very fast ramp up with a much larger set of teams where achieving a good balance of talent/skills is not possible and the experience is a commodity. Several large projects I have been involved with in the past have had to make this compromise.&lt;/p&gt;
 
 </summary>
         
