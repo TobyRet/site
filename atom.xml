@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-04-10T14:42:44+00:00</updated>
+    <updated>2014-04-13T23:19:16+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/04/13/explanatory-methods/</id>
+        <title>Screencast - Explanatory Methods</title>
+        <link href="/2014/04/13/explanatory-methods/"/>
+        <published>2014-04-13T20:00:00Z</published>
+        
+        <summary type="html">&lt;p&gt;On 9th of April 2014, we created our first screencast on our new &lt;a href=&quot;https://www.youtube.com/user/codurance&quot;&gt;YouTube channel&lt;/a&gt;. The idea is to have a series of (reasonably) short videos explaining some of the techniques we use when developing software. The videos will range from basic to advanced topics but in no particular order.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/04/10/keeping-the-domain-in-core/</id>
@@ -187,18 +199,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <published>2012-09-08T22:08:35Z</published>
         
         <summary type="html">&lt;p&gt;This week in our weekly design committee, on of the developer demonstrated how to use the Saxon Injectors to create mock XQuery functions for unit testing.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/development%20process/2012/08/14/encouraging-collaboration-via-design-committee/</id>
-        <title>Encouraging Collaboration via Design Committee</title>
-        <link href="/development%20process/2012/08/14/encouraging-collaboration-via-design-committee/"/>
-        <published>2012-08-14T22:50:42Z</published>
-        
-        <summary type="html">&lt;p&gt;Agile process promotes the view that system design emerges and evolves throughout it&#39;s life. It is a result of continuos discussions and decisions by the teams.&lt;/p&gt;
 
 </summary>
         
