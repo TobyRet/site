@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Codurance - TDD is NOT (just) about you</title>
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/codurance/app.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/pages/blog.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_magazine.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46289079-1', 'codurance.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<div class="top">
+    <div class="container">
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/casestudies">Case Studies</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/careers/craftsman">Careers</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                        <li><a href="/aboutus/ourteam">Our Team</a></li>
+                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                    </ul></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div><!-- /navbar-collapse -->
+        </div>
+    </div>
+</div><!--/header-->
+
+
+
+<!--=== End Header ===-->
+
+
+<div class="breadcrumbs margin-bottom-10">
+    <div class="container">
+        <h2 class="pull-left">TDD is NOT (just) about you</h2>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/blog">Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<!--=== Content Part ===-->
+<div class="container">
+<div class="row blog-page blog-item">
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
+    <!--Blog Post-->
+    <div class="blog margin-bottom-40">
+        
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i> 24 May 2014</li>
+                <li><i class="icon-pencil"></i> Sandro Mancuso</li>
+            </ul>
+        </div>
+        
+        <p>Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that's ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? <a href="http://twitter.com/sebrose">Seb Rose</a> compiled a <a href="http://claysnow.co.uk/to-tdd-or-not-to-tdd/">list of blog posts and tweets</a> about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of <a href="http://claysnow.co.uk/to-tdd-or-not-to-tdd/">his post</a>.</p>
+
+<p>I’ve been using TDD for many years, and although I’m fully convinced of its benefits, I’m not going to describe the pros and cons of TDD from my own point view. That would be a bit selfish. What I hope to do here is to raise a few points that haven’t been raised before in the discussions I’ve seen.</p>
+
+<h4>"I’m great, you are not."</h4>
+
+<p>There is a fair share of developers that think this way. It’s all about "Me! Me! Me!” They are developers that, if they are not already working in isolation, given the option, they would prefer to work on their own instead of a team. After receiving some requirements, they feel more comfortable going to a place where they are not going to be disturbed, and just get on with it. They will code on their own until they feel they are done. They don’t need to pair. They don’t need to write tests. They don’t need to learn new tools and practices because they are already awesome developers. Or so they think.</p>
+
+<p>Developers that fits this description are normally the ones that are more resistant to TDD, if not totally against it. TDD slow them down. TDD damages their pre-conceived idea of good design. TDD doesn’t help them because they know their code base well and can find bugs quite quickly. Since they are the only developers working on the code base, very rarely they make a mistake. They know where to change and how to change.</p>
+
+<p>Am I being unfair? Am I being a jerk? How do I know that certain developers think this way? The answer is simple: I was one of them. That’s exactly how I used to think some years ago.</p>
+
+<p>“This code sucks. Who was the moron that wrote this crap?” How many times have we said (or at least thought) that? Well, here’s some news to you. If you ever worked in a team, or had your code viewed, used, or changed by other developers, be sure that they thought the same thing about you and your code. Yes, it hurts. So now you know how other developers feel.</p>
+
+<p>Another news for you: If you always work on your own, or prefer to work on your own, chances are that you are not as good as you think you are. Other developers are the best judge of your awesomeness, not you.</p>
+
+<p>If you are a developer that don’t normally work as part of team, or don’t have other developers constantly working on the same code base as you, sorry, but you probably have a very biased and unverified opinion, mainly when it comes to TDD and other programming practices.</p>
+
+<h4>TDD is not about YOU</h4>
+
+<p>For the vast majority of my career I worked as part of a team. In the past few years, I worked in large projects with many developers and teams in different parts of the world. There is no “I” in a team. There is no “I don’t do this” in a team. A healthy team is a team where team members respect each other and produce code that meets the standards set by the team.</p>
+
+<p>Software projects, at least the ones I’m used to—not some prototypes, small CRUD web apps, or pet-project mobile app—outlive developers. Projects continue to be developed and maintained while developers come and go. A great developer understands that. She understands that other developers will need to maintain her code, long after she is gone. She understands that different developers have different ideas of what good code means. She understands that software evolves and needs to be changed. And above all, she understands well enough how tough it is to work with a large code base that she knows very little about.</p>
+
+<p>Now, remember that project you joined some time ago. The one which the code was supposedly written by smart people, but unfortunately they are all gone. Or that other project, that was a total mess and no one knew what was going on. Or even that old project, with a huge code base, where the requirements were changing on a daily basis.</p>
+
+<p>"Ah, if at least we had some tests." Tests we could rely on. Tests that could tell us the intent of the code. Tests that could make us feel confident to change that complicated and unknown code base. Tests that would make our experience of working on that code base quite enjoyable, and not our biggest pain. Wouldn’t it nice if we could click a button, and in a few minutes, if not seconds, we could have the confidence that we haven’t broken anything? Ah, if at least those other stupid developers have written some tests. Tests that could tell me what this code is supposed to do. Now we need to deal with this mess having no clue if we will break anything. "If at least the code was decoupled from the frameworks, I could try to write some tests quickly and make sense of all this mess."</p>
+
+<h4>Don’t be the other stupid developer</h4>
+
+<p>I’ve been the other stupid developer in the past. I left stuff behind that potentially caused pain to other developers. Now I know, and it sucks. Today, regardless of what I think about my own skills, I know a software project is not about me. A software project is not about any single person. So, if you still think you don’t need TDD or automated tests, think about all the other developers. Think about the people that will maintain that code once you are gone. Think about your colleagues next to you. Above all, think about yourself joining another large project with no tests, possibly written by developers that think they are as great as you.</p>
+
+<p>If you still don’t want to do TDD, fine. That’s OK. My question for you is: What are you going to do instead that will give other developers the confidence to work on the code you produced? Sorry, but your awesome notion of design is not good enough if not validated and agreed by the rest of the team (and all future developers that will ever work on that code base).</p>
+
+    </div>
+    <!--End Blog Post-->
+</div>
+<!-- End Left Sidebar -->
+
+<!-- Right Sidebar -->
+<div class="col-md-3 magazine-page">
+    <!-- Blog Latest Tweets -->
+    <div class="blog-twitter margin-bottom-30">
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- End Blog Latest Tweets -->
+</div>
+<!-- End Right Sidebar -->
+</div>
+<!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copyright-space">
+                    2013 &copy; Codurance LTD.
+                     | Company Registration No: 8712584
+                     | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <ul class="social-icons pull-right">
+                    <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
+                </ul>
+            </div>
+        </div> <!--/row-->
+    </div> <!--/container-->
+</div><!--/copyright-->
+
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-05-24T15:49:12+00:00</updated>
+    <updated>2014-05-24T21:52:11+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/05/24/tdd-is-not-about-you/</id>
+        <title>TDD is NOT (just) about you</title>
+        <link href="/2014/05/24/tdd-is-not-about-you/"/>
+        <published>2014-05-24T22:18:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that&#39;s ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? &lt;a href=&quot;http://twitter.com/sebrose&quot;&gt;Seb Rose&lt;/a&gt; compiled a &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;list of blog posts and tweets&lt;/a&gt; about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;his post&lt;/a&gt;.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/04/13/explanatory-methods/</id>
@@ -187,18 +199,6 @@ failing? How come do we still have the same old problems?&lt;/p&gt;
         <published>2012-11-21T23:14:53Z</published>
         
         <summary type="html">&lt;p&gt;It&#39;s not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I&#39;ve always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/development%20process/2012/09/08/the-spirit-to-improve/</id>
-        <title>The Spirit to Improve</title>
-        <link href="/development%20process/2012/09/08/the-spirit-to-improve/"/>
-        <published>2012-09-08T22:08:35Z</published>
-        
-        <summary type="html">&lt;p&gt;This week in our weekly design committee, on of the developer demonstrated how to use the Saxon Injectors to create mock XQuery functions for unit testing.&lt;/p&gt;
 
 </summary>
         
