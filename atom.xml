@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-05-24T21:52:11+00:00</updated>
+    <updated>2014-05-26T14:31:48+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/05/26/a-craftsman-is/</id>
+        <title>A Software Craftsman Is</title>
+        <link href="/2014/05/26/a-craftsman-is/"/>
+        <published>2014-05-26T15:00:00Z</published>
+        
+        <summary type="html">&lt;p&gt;Someone who aspires to quality.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/05/24/tdd-is-not-about-you/</id>
@@ -187,18 +199,6 @@ I&#39;m gonna piss my boss and all my team mates off writing the worst code
 I could possibly write&quot;. Well, there are always exceptions but normally
 no one does that. If that is the case, how come Agile projects are now
 failing? How come do we still have the same old problems?&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2012/11/21/speed-reading/</id>
-        <title>Speed Reading</title>
-        <link href="/2012/11/21/speed-reading/"/>
-        <published>2012-11-21T23:14:53Z</published>
-        
-        <summary type="html">&lt;p&gt;It&#39;s not often you read a book that changes your perceptions. Speed Reading by Susan Norman/Jan Cisek is one of them. I&#39;ve always loved reading books but had felt that I read very slow. According to the book reading has many types and you employ a type that suits the purpose for your reading. The problem was not the fact that I read slow but that I only had one style of reading irrespective of what I was reading and why.&lt;/p&gt;
 
 </summary>
         
