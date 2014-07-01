@@ -109,61 +109,66 @@
 
 
 <!--=== Content Part ===-->
-<div class="training page container">
-
+<div class="careers page container">
     <div class="row">
-        <!-- Content Info -->
-        <div class="col-md-6 md-margin-bottom-40">
-            <h1>Crafting Code - 2 days</h1>
+        <!--Begin Sidebar Menu-->
+        <div class="col-md-4">
+            <ul class="list-group sidebar-nav-v1">
+                <li class="list-group-item active">
+                    <span class="badge badge-green">2 Days</span>
+                    <a href="/services/training/crafted-design">Crafted Design</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge badge-green">2 Days</span>
+                    <a href="/services/training/crafting-code">Crafting Code</a>
+                </li>
+            </ul>
+        </div>
+        <!--End Sidebar Menu-->
 
-<p>This course is designed to help developers write code that is well-crafted; code that is clean, testable, maintainable, and an expression of the business domain. The course is entirely hands-on, designed to teach developers practical techniques they can immediately apply to real-world projects.</p>
+        <!--Begin Content-->
+        <div class="col-md-8">
+            <h1>Crafted Design - 2 Days</h1>
+
+<p>This course is for experienced developers that want to get better at designing well-crafted solutions. It focuses on designing software that is responsive to changing requirements and new functionality, avoiding the pitfalls that lead to legacy code.</p>
 
 <h2>Why attend?</h2>
 
-<p><strong>Software Craftsmanship</strong> is at the heart of this course. Throughout, you will learn about the Software Craftsmanship attitude to development and how to apply it to your workplace.</p>
-
-<p>Writing <strong>Clean Code</strong> is difficult. Cleaning existing code, even more so. You should attend if you want to:</p>
-
 <ul>
-<li>Write clean code that is easy to <strong>understand</strong> and <strong>maintain</strong></li>
-<li>Become more proficient in <strong>Test-Driven Development</strong> (TDD): using tests to design and build your code base</li>
-<li>Focus your tests and production code according to business requirements using <strong>Outside-In TDD</strong> (a.k.a. the London School of TDD)</li>
+<li>Learn design techniques applied in successful projects</li>
+<li>Use TDD as a design tool, applying Outside-In TDD</li>
+<li>Drive out a flexible design</li>
+<li>Build software that is not bound to a specific technology or framework by keeping them at the boundaries of your system</li>
+<li>Express your business domain in every facet of your entire application, not just methods and classes</li>
+<li>Keep your design clean as your application grows and requirements change</li>
+<li>Let your architecture emerge, rather than designing a rigid and unchangeable structure up-front</li>
 </ul>
 
-
-<p>Clean code necessitates <strong>good design</strong>. In the process of driving your code through tests, you will learn how to:</p>
-
-<ul>
-<li>Understand design principles that lead to clean code</li>
-<li><strong>Avoid over-engineering</strong> and large rewrites by incrementally evolving your design using tests</li>
-</ul>
-
-
-<p>Once you have an understanding of the principles at work, we will apply them to <strong>Legacy Code</strong> to help you gain confidence in improving legacy projects through testing, refactoring and redesigning.</p>
 
 <h2>Content</h2>
 
 <ul>
-<li>TDD lifecycle and the London School of TDD</li>
-<li>Writing unit tests that express intent, not implementation</li>
-<li>Using unit tests as a tool to drive good design</li>
-<li>Expressive code</li>
-<li>Testing and refactoring Legacy Code</li>
-<li>Introduction to SOLID Principles and Domain-Driven Design</li>
+<li>Four elements of simple design</li>
+<li>Mapping and visualising business concepts in code</li>
+<li>SOLID principles</li>
+<li>Testing and refactoring legacy code to express business domain</li>
+<li>Expressing design and architecture in code</li>
+<li>Outside-in TDD</li>
+<li>Interaction Driven Design (IDD)</li>
+<li>Introduction to DDD and supporting architecture types (i.e. layered, hexagonal and event driven)</li>
 </ul>
 
-
-<p>The course is fully hands-on and developers will be writing a lot of code.</p>
 
 <h2>Audience</h2>
 
 <p>Software developers that:</p>
 
 <ul>
-<li>are familiar with at least one Object-Oriented language</li>
-<li>are able to understand Java or C#</li>
-<li>can write and execute unit tests using a framework (such as JUnit, NUnit, etc.)</li>
-<li>have a basic understanding of mock objects</li>
+<li>have experience in developing software commercially</li>
+<li>are familiar with at least one Object Oriented Language (such as Java and C#)</li>
+<li>are able to understand Java (the codebase and exercises are in Java)</li>
+<li>are comfortable using TDD to build software</li>
+<li>understand mock objects and know how to use a mocking library</li>
 </ul>
 
 
@@ -176,26 +181,104 @@
 <li>have a development environment consisting of:
 
 <ul>
-<li>their favourite Object-Oriented language</li>
-<li>a unit test framework</li>
-<li>a mocking library</li>
+<li> Java 8</li>
+<li>favourite IDE</li>
+<li>maven 3.x</li>
+<li>a unit testing framework</li>
 </ul>
 </li>
 <li>be able to create projects, build source code and run test cases in their development environment</li>
 </ul>
 
 
-<p>In addition, a distributed version-control system such as Git is desirable.</p>
+<p>In addition a distributed version control system such as Git is desirable</p>
+
+        </div>
+    </div>
+</div>
+
+<!--=== Content Part ===-->
+<!--
+<div class="training page container">
+
+    <div class="row">
+        <!-- Content Info
+        <div class="col-md-6 md-margin-bottom-40">
+            <h1>Crafted Design - 2 Days</h1>
+
+<p>This course is for experienced developers that want to get better at designing well-crafted solutions. It focuses on designing software that is responsive to changing requirements and new functionality, avoiding the pitfalls that lead to legacy code.</p>
+
+<h2>Why attend?</h2>
+
+<ul>
+<li>Learn design techniques applied in successful projects</li>
+<li>Use TDD as a design tool, applying Outside-In TDD</li>
+<li>Drive out a flexible design</li>
+<li>Build software that is not bound to a specific technology or framework by keeping them at the boundaries of your system</li>
+<li>Express your business domain in every facet of your entire application, not just methods and classes</li>
+<li>Keep your design clean as your application grows and requirements change</li>
+<li>Let your architecture emerge, rather than designing a rigid and unchangeable structure up-front</li>
+</ul>
+
+
+<h2>Content</h2>
+
+<ul>
+<li>Four elements of simple design</li>
+<li>Mapping and visualising business concepts in code</li>
+<li>SOLID principles</li>
+<li>Testing and refactoring legacy code to express business domain</li>
+<li>Expressing design and architecture in code</li>
+<li>Outside-in TDD</li>
+<li>Interaction Driven Design (IDD)</li>
+<li>Introduction to DDD and supporting architecture types (i.e. layered, hexagonal and event driven)</li>
+</ul>
+
+
+<h2>Audience</h2>
+
+<p>Software developers that:</p>
+
+<ul>
+<li>have experience in developing software commercially</li>
+<li>are familiar with at least one Object Oriented Language (such as Java and C#)</li>
+<li>are able to understand Java (the codebase and exercises are in Java)</li>
+<li>are comfortable using TDD to build software</li>
+<li>understand mock objects and know how to use a mocking library</li>
+</ul>
+
+
+<h2>Prerequisites</h2>
+
+<p>Developers must:</p>
+
+<ul>
+<li>bring their own laptops</li>
+<li>have a development environment consisting of:
+
+<ul>
+<li> Java 8</li>
+<li>favourite IDE</li>
+<li>maven 3.x</li>
+<li>a unit testing framework</li>
+</ul>
+</li>
+<li>be able to create projects, build source code and run test cases in their development environment</li>
+</ul>
+
+
+<p>In addition a distributed version control system such as Git is desirable</p>
 
         </div>
         <!-- End Content Info -->
 
-        <!-- Image -->
+        <!-- Image
         <div class="col-md-6">
-            <img class="img-responsive" src="/assets/img/services/training/redgreenrefactor.png" />
+            <img class="img-responsive" src="" />
         </div>
     </div>
 </div>
+-->
 
 
 <!--=== Copyright ===-->
