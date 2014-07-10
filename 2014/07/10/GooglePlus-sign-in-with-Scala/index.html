@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Codurance - Google+ Sign-In with Scalatra</title>
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/codurance/app.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/pages/blog.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_magazine.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46289079-1', 'codurance.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<div class="top">
+    <div class="container">
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/casestudies">Case Studies</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/careers/craftsman">Careers</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                        <li><a href="/aboutus/ourteam">Our Team</a></li>
+                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                    </ul></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div><!-- /navbar-collapse -->
+        </div>
+    </div>
+</div><!--/header-->
+
+
+
+<!--=== End Header ===-->
+
+
+<div class="breadcrumbs margin-bottom-10">
+    <div class="container">
+        <h2 class="pull-left">Google+ Sign-In with Scalatra</h2>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/blog">Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<!--=== Content Part ===-->
+<div class="container">
+<div class="row blog-page blog-item">
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
+    <!--Blog Post-->
+    <div class="blog margin-bottom-40">
+        
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i> 10 Jul 2014</li>
+                <li><i class="icon-pencil"></i> Sandro Mancuso</li>
+            </ul>
+        </div>
+        
+        <h3>The requirements</h3>
+
+<p>For one of our internal pet-projects at Codurance, we decided to have authentication and authorisation using <a href="https://developers.google.com/+/">Google+ Sign-in</a>. Google+ Sign-In is able to authenticate anyone with a Google email account (gmail or business) using OAuth 2.0. However, we wanted to restrict the application to Codurance craftsmen only, that means, people with a Codurance email address.</p>
+
+<p>The application had also to redirect us to the desired URL, in case we tried to access a deep URL without being authenticated.</p>
+
+<h3>Technology stack</h3>
+
+<p>In this project we are using:</p>
+
+<ul>
+<li><a href="http://www.scala-lang.org/">Scala</a></li>
+<li><a href="http://www.scalatra.org/">Scalatra</a> as a web micro-framework</li>
+<li><a href="http://jade-lang.com/">Jade</a> as template engine</li>
+<li><a href="http://www.scala-sbt.org/">sbt</a> as our build tool.</li>
+<li><a href="https://github.com/json4s/json4s">json4s</a> for JSON manipulation</li>
+<li><a href="https://github.com/stackmob/newman">Newman</a> as HTTP client library</li>
+</ul>
+
+
+<h3>Implementation</h3>
+
+<h4>Authentication Filter</h4>
+
+<p>First we need to add an AuthenticationFilter to our Scalatra application.</p>
+
+<pre><code class="scala">import javax.servlet.ServletContext
+
+import com.codurance.cerebro.controllers.MainController
+import com.codurance.cerebro.security.AuthenticationFilter
+import org.scalatra._
+
+class ScalatraBootstrap extends LifeCycle {
+    override def init(context: ServletContext) {
+        context.mount(new AuthenticationFilter, "/*")
+        context.mount(new MainController, "/*")
+    }
+}
+</code></pre>
+
+<p>Then, in the AuthenticationFilter, we need to redirect to the sign-in page when we don't have a user in the session. We also need to exclude the pages and URLs that don't need a user to be logged in.</p>
+
+<pre><code class="scala">package com.codurance.cerebro.security
+
+import org.scalatra.ScalatraFilter
+
+class AuthenticationFilter extends ScalatraFilter {
+    before() {
+        if (isProtectedUrl &amp;&amp; userIsNotAuthenticated) {
+            redirect("/signin?originalUri=" + originalURL)
+        }
+    }
+
+    def originalURL(): String = {
+        val url = Option(request.getRequestURI).getOrElse("/main")
+        if (url.startsWith("/signin")) "/main" else url
+    }
+
+    def userIsNotAuthenticated: Boolean = {
+        request.getSession.getAttribute("user") == null
+    }
+
+    def isProtectedUrl(): Boolean = {
+        val url = request.getRequestURI();
+        !(url.equals("/signin") || url.equals("/authorise") || url.equals("/not-authorised"))
+    }
+
+}
+</code></pre>
+
+<p>For more information about filters, check the <a href="http://www.scalatra.org/">Scalatra</a> documentation.</p>
+
+<h4>signin.jade</h4>
+
+<p>Then we need a sign-in page, that is displayed when the user is not authenticated.</p>
+
+<pre><code class="jade">- attributes("title") = "Cerebro"
+- attributes("layout") = "/WEB-INF/templates/layouts/no-header.jade"
+
+-@ val originalUri: String
+
+h1 Welcome to Cerebro!
+
+p= "Please sigin in using google id!"
+p URI: #{originalUri}
+
+:!javascript
+    function onSignInCallback(authResult) {
+        if (authResult['access_token']) {
+            $.ajax({
+                type: 'POST',
+                url: '/authorise',
+                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                data: {authCode: authResult.code },
+                success: function(result) {
+                    window.location.replace('#{originalUri}');
+                },
+                error: function(result) {
+                    window.location.replace('/not-authorised');
+                }
+            });
+        }
+    }
+
+#gConnect
+    button(class='g-signin'
+    data-scope='https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email'
+    data-requestvisibleactions='http://schemas.google.com/AddActivity'
+    data-clientId='&lt;&lt;YOUR_CLIENT_ID&gt;&gt;'
+    data-accesstype='offline' data-callback='onSignInCallback'
+    data-theme='dark'
+    data-cookiepolicy='single_host_origin')
+
+script(src='https://plus.google.com/js/client:plusone.js')
+script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+</code></pre>
+
+<p>If you are not using Jade or want more details, check the <a href="https://developers.google.com/+/web/signin/add-button">official documentation</a> about how to <a href="https://developers.google.com/+/web/signin/add-button">add the sign-in button</a> to your page.</p>
+
+<p>This should be enough to trigger the Google authentication form when clicking on the Sign-In button. Once the authentication is done, the callback function will send us a POST with the "authCode".</p>
+
+<h4>Main Controller</h4>
+
+<p>We then need a controller that will respond to all these requests, displays the respective pages, and do the authorisation.</p>
+
+<pre><code class="scala">package com.codurance.cerebro.controllers
+
+import javax.servlet.http.{HttpServletResponse, HttpServletRequest}
+
+class BaseController extends CerebroStack {
+
+    def display(page: String, attributes: (String, Any)*)(implicit request: HttpServletRequest, response: HttpServletResponse): String = {
+        contentType = "text/html"
+        val all_attributes = attributes :+ ("user", session.getAttribute("user"))
+        jade(page, all_attributes: _*)
+    }
+
+}
+</code></pre>
+
+<pre><code class="scala">package com.codurance.cerebro.controllers
+
+import com.codurance.cerebro.security.CoduranceAuthorisation.authorise
+
+import scala.Predef._
+
+class MainController extends BaseController {
+
+    get("/") {
+        display("main")
+    }
+
+    get("/main") {
+        display("main")
+    }
+
+    get("/signin") {
+        display("signin", "originalUri" -&gt; request.getParameter("originalUri"))
+    }
+
+    get("/not-authorised") {
+        display("not-authorised")
+    }
+
+    post("/authorise") {
+        val authCode: String = params.getOrElse("authCode", halt(400))
+        authorise(authCode)
+    }
+
+}
+</code></pre>
+
+<p>The MainController responds to "/authorise", which invokes the authorisation function defined inside CoduranceAuthorisation. Note that we receive the "authCode" from the Google+ authentication. Once the user was authenticated, we had to make the application available just for users using a Codurance email. For that, we had to invoke the <a href="https://developers.google.com/+/api/latest/people">Google+ People API</a> to get more information (email address, domain, etc).</p>
+
+<p>The authorise function would then check if the user belongs to the Codurance domain and add her to the session.</p>
+
+<pre><code class="scala">package com.codurance.cerebro.security
+
+import java.net.URL
+import javax.servlet.http.{HttpSession, HttpServletResponse, HttpServletRequest}
+import javax.servlet.http.HttpServletResponse._
+
+import com.google.api.client.googleapis.auth.oauth2.{GoogleAuthorizationCodeTokenRequest, GoogleTokenResponse}
+import com.google.api.client.http.javanet.NetHttpTransport
+import com.google.api.client.json.jackson.JacksonFactory
+import com.stackmob.newman._
+import com.stackmob.newman.dsl._
+
+import scala.concurrent.Await
+import scala.concurrent.duration._
+
+object CoduranceAuthorisation {
+
+    implicit val httpClient = new ApacheHttpClient
+
+    val GOOGLE_PLUS_PEOPLE_URL = "https://www.googleapis.com/plus/v1/people/me?fields=aboutMe%2Ccover%2FcoverPhoto%2CdisplayName%2Cdomain%2Cemails%2Clanguage%2Cname&amp;access_token="
+    val CLIENT_ID: String = "&lt;&lt;YOUR_CLIENT_ID&gt;&gt;"
+    val CLIENT_SECRET = "&lt;&lt;YOUR_CLIENT_SECRET&gt;&gt;"
+    val API_KEY = "&lt;&lt;YOUR_API_KEY&gt;&gt;"
+    val APPLICATION_NAME = "&lt;&lt;YOUR_APP_NAME&gt;&gt;"
+    val JSON_FACTORY = new JacksonFactory()
+    val TRANSPORT = new NetHttpTransport()
+
+    def authorise(authCode: String)(implicit session: HttpSession, response: HttpServletResponse): Unit = {
+        val user = userFor(authCode)
+        user.domain match {
+            case Some(Domain("codurance.com")) =&gt; {
+                session.setAttribute("user", user)
+                response.setStatus(SC_OK)
+            }
+            case _ =&gt; response.setStatus(SC_UNAUTHORIZED)
+        }
+    }
+
+    def userFor(authCode: String): User = {
+        val tokenResponse: GoogleTokenResponse =
+            new GoogleAuthorizationCodeTokenRequest(
+                TRANSPORT, JSON_FACTORY, CLIENT_ID, CLIENT_SECRET, authCode, "postmessage"
+            ).execute
+        val url = new URL(GOOGLE_PLUS_PEOPLE_URL + tokenResponse.getAccessToken)
+        val userInfo = Await.result(GET(url).apply, 10.seconds)
+        GooglePlusJSONResponseParser.toUser(userInfo.bodyString, tokenResponse.toString)
+    }
+
+}
+</code></pre>
+
+<p><strong>Note</strong> that in the GOOGLE_PLUS_PEOPLE_URL we specify all the fields we are interested in, including the <em>domain</em> and <em>emails</em>.</p>
+
+<p><strong>GooglePlusJSONResponseParser</strong> is a class that we created to parse the JSON response and convert into a User object. We are not showing it in order to keep this post short and focused. You can create your own JSON parser. :)</p>
+
+<p><strong>IMPORTANT:</strong> Don't forget to import add the Google+ APIs to your sbt build file.</p>
+
+<pre><code>    "com.google.apis" % "google-api-services-oauth2" % "v2-rev59-1.17.0-rc",
+    "com.google.apis" % "google-api-services-plus" % "v1-rev115-1.17.0-rc",
+</code></pre>
+
+<p>That's about it. You now can display the name of the user on all your pages, using a default layout.</p>
+
+<pre><code class="jade">-@ val title: String
+-@ val headline: String = title
+-@ val body: String
+-@ val user: com.codurance.cerebro.security.User
+
+!!!
+html
+    head
+        title= title
+    body
+        header
+            div
+                span Hello #{user.name.displayName}
+        div
+            h1= headline
+            != body
+</code></pre>
+
+    </div>
+    <!--End Blog Post-->
+</div>
+<!-- End Left Sidebar -->
+
+<!-- Right Sidebar -->
+<div class="col-md-3 magazine-page">
+    <!-- Blog Latest Tweets -->
+    <div class="blog-twitter margin-bottom-30">
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- End Blog Latest Tweets -->
+</div>
+<!-- End Right Sidebar -->
+</div>
+<!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copyright-space">
+                    2013 &copy; Codurance LTD.
+                     | Company Registration No: 8712584
+                     | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <ul class="social-icons pull-right">
+                    <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
+                </ul>
+            </div>
+        </div> <!--/row-->
+    </div> <!--/container-->
+</div><!--/copyright-->
+
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>
