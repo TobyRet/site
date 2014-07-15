@@ -1,8 +1,10 @@
 @import url('../style.css');
-
 @import url('../app.css');
 .standout {
   color: #e67e22;
+}
+.blog img {
+  max-width: 100%;
 }
 .blog .blog-image-attr {
   font-size: 0.75em;
