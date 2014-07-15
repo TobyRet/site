@@ -3,7 +3,7 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-07-15T12:10:21+00:00</updated>
+    <updated>2014-07-15T12:10:37+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
@@ -15,7 +15,7 @@
         <id>/2014/07/15/mob-programming/</id>
         <title>Mob Programming, and the importance of fun at work</title>
         <link href="/2014/07/15/mob-programming/"/>
-        <published>2014-07-15T12:00:00+00:00</published>
+        <published>2014-07-15T12:00:00Z</published>
         
         <summary type="html">&lt;p&gt;It&#39;s been a few weeks since SoCraTes UK 2014, and I&#39;ve had some time to reflect on the event and my learning experiences. Today, I want to talk about the biggest things that stood out for me.&lt;/p&gt;
 
@@ -27,7 +27,7 @@
         <id>/2014/07/10/GooglePlus-sign-in-with-Scala/</id>
         <title>Google+ Sign-In with Scalatra</title>
         <link href="/2014/07/10/GooglePlus-sign-in-with-Scala/"/>
-        <published>2014-07-10T15:35:00+00:00</published>
+        <published>2014-07-10T15:35:00Z</published>
         
         <summary type="html">&lt;h3&gt;The requirements&lt;/h3&gt;
 
@@ -39,7 +39,7 @@
         <id>/2014/05/26/a-craftsman-is/</id>
         <title>A Software Craftsman Is</title>
         <link href="/2014/05/26/a-craftsman-is/"/>
-        <published>2014-05-26T15:00:00+00:00</published>
+        <published>2014-05-26T15:00:00Z</published>
         
         <summary type="html">&lt;p&gt;Someone who aspires to quality.&lt;/p&gt;
 
@@ -51,7 +51,7 @@
         <id>/2014/05/24/tdd-is-not-about-you/</id>
         <title>TDD is NOT (just) about you</title>
         <link href="/2014/05/24/tdd-is-not-about-you/"/>
-        <published>2014-05-24T22:18:00+00:00</published>
+        <published>2014-05-24T22:18:00Z</published>
         
         <summary type="html">&lt;p&gt;Recently, another big debate about TDD started on Twitter and blogosphere. Is TDD dead? (No, that&#39;s ridiculous.) Does it improve or damage our design? Does it make us faster or slow us down? &lt;a href=&quot;http://twitter.com/sebrose&quot;&gt;Seb Rose&lt;/a&gt; compiled a &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;list of blog posts and tweets&lt;/a&gt; about it, so I won’t repeat them here. If you are not aware of the whole discussions, please read all the links Seb collected at the end of &lt;a href=&quot;http://claysnow.co.uk/to-tdd-or-not-to-tdd/&quot;&gt;his post&lt;/a&gt;.&lt;/p&gt;
 
@@ -63,7 +63,7 @@
         <id>/2014/04/13/explanatory-methods/</id>
         <title>Screencast - Explanatory Methods</title>
         <link href="/2014/04/13/explanatory-methods/"/>
-        <published>2014-04-13T20:00:00+00:00</published>
+        <published>2014-04-13T20:00:00Z</published>
         
         <summary type="html">&lt;p&gt;On 9th of April 2014, we created our first screencast on our new &lt;a href=&quot;https://www.youtube.com/user/codurance&quot;&gt;YouTube channel&lt;/a&gt;. The idea is to have a series of (reasonably) short videos explaining some of the techniques we use when developing software. The videos will range from basic to advanced topics but in no particular order.&lt;/p&gt;
 
@@ -75,7 +75,7 @@
         <id>/2014/04/10/keeping-the-domain-in-core/</id>
         <title>Keeping the domain in the core</title>
         <link href="/2014/04/10/keeping-the-domain-in-core/"/>
-        <published>2014-04-10T00:30:00+00:00</published>
+        <published>2014-04-10T00:30:00Z</published>
         
         <summary type="html">&lt;p&gt;Inspired by Alistair Cockburn&#39;s excellent &lt;a href=&quot;http://alistair.cockburn.us/Hexagonal+architecture&quot;&gt;article&lt;/a&gt; on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.&lt;/p&gt;
 
@@ -87,7 +87,7 @@
         <id>/2014/03/11/just-another-day-at-the-office/</id>
         <title>Just Another Day at the Office</title>
         <link href="/2014/03/11/just-another-day-at-the-office/"/>
-        <published>2014-03-11T20:00:00+00:00</published>
+        <published>2014-03-11T20:00:00Z</published>
         
         <summary type="html">&lt;p&gt;On 4th of March 2014, a few days before my baby boy Samuel completed two months, a well-regarded cardiologist—let&#39;s call him &lt;em&gt;Dr. Smith&lt;/em&gt;—gave us the news that Samuel had a heart condition called &lt;a href=&quot;http://en.wikipedia.org/wiki/Pulmonary_valve_stenosis&quot;&gt;pulmonary valve stenosis&lt;/a&gt;. Dr. Smith&#39;s recommendation was that Samuel had a heart procedure called &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;balloon pulmonary valvotomy&lt;/a&gt; or &lt;a href=&quot;http://tchin.org/resource_room/c_art_02.htm&quot;&gt;ballon valvuloplasty&lt;/a&gt; as soon as possible. The procedure was scheduled to 11th of March 2014, on &lt;a href=&quot;http://theharleystreetclinic.co.uk/&quot;&gt;The Harley Street Clinic&lt;/a&gt;. Needless to say, the whole family was devastated.&lt;/p&gt;
 
@@ -99,7 +99,7 @@
         <id>/2014/03/03/craftsmanship-book-released/</id>
         <title>Software Craftsmanship book is now finished</title>
         <link href="/2014/03/03/craftsmanship-book-released/"/>
-        <published>2014-03-03T11:37:00+00:00</published>
+        <published>2014-03-03T11:37:00Z</published>
         
         <summary type="html">&lt;p&gt;Yesterday a wonderful 19-month journey came to an end. I released the last chapter of my book &lt;a href=&quot;http://leanpub.com/socra&quot;&gt;Software Craftsmanship: Professionalism, Pragmatism, Pride&lt;/a&gt;. As an avid reader since a young age, writing a book was always something I wanted to do. For me, it didn&#39;t matter if people would read it or not; I just wanted to write a book I was proud of. I wanted to write a book that would help developers and companies to get better. A book that could inspire developers to care about their craft. I also wanted a book that my kids, at some point in the future, could read and be inspired, even if they had chosen different professions. I&#39;m not sure if they will read it or be inspired by it, but at least I&#39;m giving my best shot.&lt;/p&gt;
 
@@ -111,7 +111,7 @@
         <id>/2014/02/19/pairing-without-programming/</id>
         <title>Pairing without Programming</title>
         <link href="/2014/02/19/pairing-without-programming/"/>
-        <published>2014-02-19T17:00:00+00:00</published>
+        <published>2014-02-19T17:00:00Z</published>
         
         <summary type="html">&lt;p&gt;Pairing is often associated with programming. There&#39;s a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it&#39;s a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.&lt;/p&gt;
 
@@ -123,7 +123,7 @@
         <id>/2014/02/08/resist-the-just-in-case/</id>
         <title>Resist the "Just in Case"</title>
         <link href="/2014/02/08/resist-the-just-in-case/"/>
-        <published>2014-02-08T16:50:00+00:00</published>
+        <published>2014-02-08T16:50:00Z</published>
         
         <summary type="html">&lt;p&gt;Of all the projects I have worked on a big regret has been; adding complexity where it was not needed. I was recently reminded of, how easy it is to fall into that trap.&lt;/p&gt;
 
@@ -135,7 +135,7 @@
         <id>/2014/01/21/samir-talwar-joined/</id>
         <title>Samir Talwar is our first craftsman</title>
         <link href="/2014/01/21/samir-talwar-joined/"/>
-        <published>2014-01-21T15:20:00+00:00</published>
+        <published>2014-01-21T15:20:00Z</published>
         
         <summary type="html">&lt;p&gt;We are very happy to announce that &lt;a href=&quot;https://twitter.com/samirtalwar&quot;&gt;Samir Talwar&lt;/a&gt; is joining us as our first craftsman. Mash and I first met Samir back in October 2010, when he joined &lt;a href=&quot;http://londonswcraft.com&quot;&gt;LSCC&lt;/a&gt;. Samir became a very active LSCC member, ran many technical sessions, became an LSCC Associate, and is now part of the LSCC organisation team.&lt;/p&gt;
 
@@ -147,7 +147,7 @@
         <id>/2013/11/21/starting-craftsmanship-communities/</id>
         <title>Starting a Software Craftsmanship Community</title>
         <link href="/2013/11/21/starting-craftsmanship-communities/"/>
-        <published>2013-11-21T22:56:00+00:00</published>
+        <published>2013-11-21T22:56:00Z</published>
         
         <summary type="html">&lt;p&gt;Two people that meet regularly are already a community. The first thing to know if you want to start a community is that it is much simpler than you think. You just need another person that is keen to meet regularly and a public space like a coffee shop or a quiet pub. That&#39;s it. You already have your community going. Everything else that follows in this blog post are just things that helped us to grow the &lt;a href=&quot;http://londonswcraft.com&quot;&gt;London Software Craftsmanship Community&lt;/a&gt; (LSCC) from two people to the largest software craftsmanship community in the world, but they are not essential to have a great and healthy community.&lt;/p&gt;
 
@@ -159,7 +159,7 @@
         <id>/2013/08/23/test-deafness/</id>
         <title>Test Deafness</title>
         <link href="/2013/08/23/test-deafness/"/>
-        <published>2013-08-23T02:26:00+00:00</published>
+        <published>2013-08-23T02:26:00Z</published>
         
         <summary type="html">&lt;p&gt;A few months ago I was talking to a musician friend of mine. He is also
 Brazilian, same age as me, and moved to the UK on the same year I did.
@@ -179,7 +179,7 @@ face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
         <id>/2013/07/29/my-birthday-wish-list/</id>
         <title>My birthday wish list</title>
         <link href="/2013/07/29/my-birthday-wish-list/"/>
-        <published>2013-07-29T23:46:00+00:00</published>
+        <published>2013-07-29T23:46:00Z</published>
         
         <summary type="html">&lt;p&gt;Today is my birthday. Yay! And since today is all about me, I will
 choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&gt;
@@ -192,7 +192,7 @@ choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&g
         <id>/2013/02/07/project-documentation/</id>
         <title>Project Documentation</title>
         <link href="/2013/02/07/project-documentation/"/>
-        <published>2013-02-07T17:59:29+00:00</published>
+        <published>2013-02-07T17:59:29Z</published>
         
         <summary type="html">&lt;p&gt;Our project has a number of places where we keep documentation. To name but a few we have a Wiki, Sharepoint Site, Jira etc. When I want to know something that is specific to my project the first place I look is my e-mail archive or shout a question to my team and if it&#39;s a general question about a framework or library then I go for the Google.&lt;/p&gt;
 
