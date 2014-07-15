@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
     <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 
+    
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -129,6 +131,7 @@
             </ul>
         </div>
         
+
         <p>Maven multi-project stucture can get quite difficult to manage once you have a relatively deep hierarchy and more than a few projects. Looking at one such complex structure I found that much of this complexity can be avoided by carefully looking at the relation between parent and child projects and understanding why the projects have been split in the first place.</p>
 
 <p>Maven allows composition and association type relationships between parent and children POMs (projects). The composition relation is expressed by including the child in the <em>modules</em> element of the parent POM and refering to the parent from the child POM. The association type relation is expressed by only refering to the parent from the child POM.</p>
@@ -139,6 +142,8 @@
 
 <p>Lastly project hierarchies are not the only way to share common POM setups and dependencies. The other option is to use maven profiles. Typically you'd have a combination of a hierarchical project simplified by use of maven profiles.</p>
 
+
+        
     </div>
     <!--End Blog Post-->
 </div>

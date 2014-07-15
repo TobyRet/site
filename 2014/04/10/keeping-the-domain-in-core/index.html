@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
     <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
 
+    
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -129,6 +131,7 @@
             </ul>
         </div>
         
+
         <p>Inspired by Alistair Cockburn's excellent <a href="http://alistair.cockburn.us/Hexagonal+architecture">article</a> on Hexagonal Architecture, on our current project we have kept the core domain of our application independent of the infrastructure by taking the simple decision to divide our code into two main sections (higher level packages): infrastructure and core.</p>
 
 <p>The infrastructure section depends on the core but the core knows nothing about the infrastructure - the domain is uncontaminated by infrastructure concerns.</p>
@@ -141,6 +144,8 @@
 
 <p>The JMS Message Listener is only concerned with the delivery of the message. How that message is handled, once received, is independent of the infrastructure. The Received Message in this case is an interface implemented by JMS Received Message that lives in the infrastructure package. Here we use dependency inversion to ensure that the core does not depend on the infrastructure package.</p>
 
+
+        
     </div>
     <!--End Blog Post-->
 </div>

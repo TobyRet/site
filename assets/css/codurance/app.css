@@ -10,6 +10,9 @@
   font-size: 0.75em;
   text-align: center;
 }
+.blog .cross-post {
+  font-style: italic;
+}
 .page h1 {
   color: #e67e22;
 }
