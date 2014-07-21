@@ -158,49 +158,51 @@
 
 <p>First we need to add an AuthenticationFilter to our Scalatra application.</p>
 
-<pre><code class="scala">import javax.servlet.ServletContext
+<div class="highlight"><pre><code class="scala"><span class="k">import</span> <span class="nn">javax.servlet.ServletContext</span>
 
-import com.codurance.cerebro.controllers.MainController
-import com.codurance.cerebro.security.AuthenticationFilter
-import org.scalatra._
+<span class="k">import</span> <span class="nn">com.codurance.cerebro.controllers.MainController</span>
+<span class="k">import</span> <span class="nn">com.codurance.cerebro.security.AuthenticationFilter</span>
+<span class="k">import</span> <span class="nn">org.scalatra._</span>
 
-class ScalatraBootstrap extends LifeCycle {
-    override def init(context: ServletContext) {
-        context.mount(new AuthenticationFilter, "/*")
-        context.mount(new MainController, "/*")
-    }
-}
-</code></pre>
+<span class="k">class</span> <span class="nc">ScalatraBootstrap</span> <span class="k">extends</span> <span class="nc">LifeCycle</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">init</span><span class="o">(</span><span class="n">context</span><span class="k">:</span> <span class="kt">ServletContext</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">mount</span><span class="o">(</span><span class="k">new</span> <span class="nc">AuthenticationFilter</span><span class="o">,</span> <span class="s">&quot;/*&quot;</span><span class="o">)</span>
+        <span class="n">context</span><span class="o">.</span><span class="n">mount</span><span class="o">(</span><span class="k">new</span> <span class="nc">MainController</span><span class="o">,</span> <span class="s">&quot;/*&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+
 
 <p>Then, in the AuthenticationFilter, we need to redirect to the sign-in page when we don't have a user in the session. We also need to exclude the pages and URLs that don't need a user to be logged in.</p>
 
-<pre><code class="scala">package com.codurance.cerebro.security
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
 
-import org.scalatra.ScalatraFilter
+<span class="k">import</span> <span class="nn">org.scalatra.ScalatraFilter</span>
 
-class AuthenticationFilter extends ScalatraFilter {
-    before() {
-        if (isProtectedUrl &amp;&amp; userIsNotAuthenticated) {
-            redirect("/signin?originalUri=" + originalURL)
-        }
-    }
+<span class="k">class</span> <span class="nc">AuthenticationFilter</span> <span class="k">extends</span> <span class="nc">ScalatraFilter</span> <span class="o">{</span>
+    <span class="n">before</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isProtectedUrl</span> <span class="o">&amp;&amp;</span> <span class="n">userIsNotAuthenticated</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">redirect</span><span class="o">(</span><span class="s">&quot;/signin?originalUri=&quot;</span> <span class="o">+</span> <span class="n">originalURL</span><span class="o">)</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
-    def originalURL(): String = {
-        val url = Option(request.getRequestURI).getOrElse("/main")
-        if (url.startsWith("/signin")) "/main" else url
-    }
+    <span class="k">def</span> <span class="n">originalURL</span><span class="o">()</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">url</span> <span class="k">=</span> <span class="nc">Option</span><span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="n">getRequestURI</span><span class="o">).</span><span class="n">getOrElse</span><span class="o">(</span><span class="s">&quot;/main&quot;</span><span class="o">)</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">url</span><span class="o">.</span><span class="n">startsWith</span><span class="o">(</span><span class="s">&quot;/signin&quot;</span><span class="o">))</span> <span class="s">&quot;/main&quot;</span> <span class="k">else</span> <span class="n">url</span>
+    <span class="o">}</span>
 
-    def userIsNotAuthenticated: Boolean = {
-        request.getSession.getAttribute("user") == null
-    }
+    <span class="k">def</span> <span class="n">userIsNotAuthenticated</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="n">request</span><span class="o">.</span><span class="n">getSession</span><span class="o">.</span><span class="n">getAttribute</span><span class="o">(</span><span class="s">&quot;user&quot;</span><span class="o">)</span> <span class="o">==</span> <span class="kc">null</span>
+    <span class="o">}</span>
 
-    def isProtectedUrl(): Boolean = {
-        val url = request.getRequestURI();
-        !(url.equals("/signin") || url.equals("/authorise") || url.equals("/not-authorised"))
-    }
+    <span class="k">def</span> <span class="n">isProtectedUrl</span><span class="o">()</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">url</span> <span class="k">=</span> <span class="n">request</span><span class="o">.</span><span class="n">getRequestURI</span><span class="o">();</span>
+        <span class="o">!(</span><span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/signin&quot;</span><span class="o">)</span> <span class="o">||</span> <span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/authorise&quot;</span><span class="o">)</span> <span class="o">||</span> <span class="n">url</span><span class="o">.</span><span class="n">equals</span><span class="o">(</span><span class="s">&quot;/not-authorised&quot;</span><span class="o">))</span>
+    <span class="o">}</span>
 
-}
-</code></pre>
+<span class="o">}</span>
+</code></pre></div>
+
 
 <p>For more information about filters, check the <a href="http://www.scalatra.org/">Scalatra</a> documentation.</p>
 
@@ -208,46 +210,47 @@ class AuthenticationFilter extends ScalatraFilter {
 
 <p>Then we need a sign-in page, that is displayed when the user is not authenticated.</p>
 
-<pre><code class="jade">- attributes("title") = "Cerebro"
-- attributes("layout") = "/WEB-INF/templates/layouts/no-header.jade"
+<div class="highlight"><pre><code class="jade"><span class="p">-</span> <span class="n">attributes</span><span class="o">(</span><span class="s">&quot;title&quot;</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;Cerebro&quot;</span>
+<span class="p">-</span> <span class="n">attributes</span><span class="o">(</span><span class="s">&quot;layout&quot;</span><span class="o">)</span> <span class="k">=</span> <span class="s">&quot;/WEB-INF/templates/layouts/no-header.jade&quot;</span>
 
--@ val originalUri: String
+<span class="p">-@ </span><span class="k">val</span> <span class="n">originalUri</span><span class="k">:</span> <span class="kt">String</span>
 
-h1 Welcome to Cerebro!
+<span class="nt">h1</span> Welcome to Cerebro!
 
-p= "Please sigin in using google id!"
-p URI: #{originalUri}
+<span class="nt">p</span><span class="p">=</span> <span class="s">&quot;Please sigin in using google id!&quot;</span>
+<span class="nt">p</span> URI: <span class="si">#{</span><span class="n">originalUri</span><span class="si">}</span>
 
-:!javascript
-    function onSignInCallback(authResult) {
-        if (authResult['access_token']) {
-            $.ajax({
-                type: 'POST',
-                url: '/authorise',
-                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
-                data: {authCode: authResult.code },
-                success: function(result) {
-                    window.location.replace('#{originalUri}');
-                },
-                error: function(result) {
-                    window.location.replace('/not-authorised');
-                }
-            });
-        }
-    }
+<span class="nd">:!javascript</span>
+    <span class="nd">function onSignInCallback(authResult) {</span>
+        <span class="nd">if (authResult[&#39;access_token&#39;]) {</span>
+            <span class="nd">$.ajax({</span>
+                <span class="nd">type: &#39;POST&#39;,</span>
+                <span class="nd">url: &#39;/authorise&#39;,</span>
+                <span class="nd">contentType: &#39;application/x-www-form-urlencoded; charset=utf-8&#39;,</span>
+                <span class="nd">data: {authCode: authResult.code },</span>
+                <span class="nd">success: function(result) {</span>
+                    <span class="nd">window.location.replace(&#39;</span><span class="si">#{</span><span class="n">originalUri</span><span class="si">}</span><span class="nd">&#39;);</span>
+                <span class="nd">},</span>
+                <span class="nd">error: function(result) {</span>
+                    <span class="nd">window.location.replace(&#39;/not-authorised&#39;);</span>
+                <span class="nd">}</span>
+            <span class="nd">});</span>
+        <span class="nd">}</span>
+    <span class="nd">}</span>
 
-#gConnect
-    button(class='g-signin'
-    data-scope='https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email'
-    data-requestvisibleactions='http://schemas.google.com/AddActivity'
-    data-clientId='&lt;&lt;YOUR_CLIENT_ID&gt;&gt;'
-    data-accesstype='offline' data-callback='onSignInCallback'
-    data-theme='dark'
-    data-cookiepolicy='single_host_origin')
+<span class="nf">#gConnect</span>
+    <span class="nt">button</span>(<span class="na">class=</span><span class="s">&#39;g-signin&#39;</span>
+    <span class="na">data-scope=</span><span class="s">&#39;https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email&#39;</span>
+    <span class="na">data-requestvisibleactions=</span><span class="s">&#39;http://schemas.google.com/AddActivity&#39;</span>
+    <span class="na">data-clientId=</span><span class="s">&#39;&lt;&lt;YOUR_CLIENT_ID&gt;&gt;&#39;</span>
+    <span class="na">data-accesstype=</span><span class="s">&#39;offline&#39;</span> <span class="na">data-callback=</span><span class="s">&#39;onSignInCallback&#39;</span>
+    <span class="na">data-theme=</span><span class="s">&#39;dark&#39;</span>
+    <span class="na">data-cookiepolicy=</span><span class="s">&#39;single_host_origin&#39;</span>)
 
-script(src='https://plus.google.com/js/client:plusone.js')
-script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
-</code></pre>
+<span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;https://plus.google.com/js/client:plusone.js&#39;</span>)
+<span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&#39;</span>)
+</code></pre></div>
+
 
 <p>If you are not using Jade or want more details, check the <a href="https://developers.google.com/+/web/signin/add-button">official documentation</a> about how to <a href="https://developers.google.com/+/web/signin/add-button">add the sign-in button</a> to your page.</p>
 
@@ -257,107 +260,112 @@ script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
 
 <p>We then need a controller that will respond to all these requests, displays the respective pages, and do the authorisation.</p>
 
-<pre><code class="scala">package com.codurance.cerebro.controllers
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
 
-import javax.servlet.http.{HttpServletResponse, HttpServletRequest}
+<span class="k">import</span> <span class="nn">javax.servlet.http.</span><span class="o">{</span><span class="nc">HttpServletResponse</span><span class="o">,</span> <span class="nc">HttpServletRequest</span><span class="o">}</span>
 
-class BaseController extends CerebroStack {
+<span class="k">class</span> <span class="nc">BaseController</span> <span class="k">extends</span> <span class="nc">CerebroStack</span> <span class="o">{</span>
 
-    def display(page: String, attributes: (String, Any)*)(implicit request: HttpServletRequest, response: HttpServletResponse): String = {
-        contentType = "text/html"
-        val all_attributes = attributes :+ ("user", session.getAttribute("user"))
-        jade(page, all_attributes: _*)
-    }
+    <span class="k">def</span> <span class="n">display</span><span class="o">(</span><span class="n">page</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">attributes</span><span class="k">:</span> <span class="o">(</span><span class="kt">String</span><span class="o">,</span> <span class="kt">Any</span><span class="o">)*)(</span><span class="k">implicit</span> <span class="n">request</span><span class="k">:</span> <span class="kt">HttpServletRequest</span><span class="o">,</span> <span class="n">response</span><span class="k">:</span> <span class="kt">HttpServletResponse</span><span class="o">)</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="n">contentType</span> <span class="k">=</span> <span class="s">&quot;text/html&quot;</span>
+        <span class="k">val</span> <span class="n">all_attributes</span> <span class="k">=</span> <span class="n">attributes</span> <span class="o">:+</span> <span class="o">(</span><span class="s">&quot;user&quot;</span><span class="o">,</span> <span class="n">session</span><span class="o">.</span><span class="n">getAttribute</span><span class="o">(</span><span class="s">&quot;user&quot;</span><span class="o">))</span>
+        <span class="n">jade</span><span class="o">(</span><span class="n">page</span><span class="o">,</span> <span class="n">all_attributes</span><span class="k">:</span> <span class="k">_</span><span class="kt">*</span><span class="o">)</span>
+    <span class="o">}</span>
 
-}
-</code></pre>
+<span class="o">}</span>
+</code></pre></div>
 
-<pre><code class="scala">package com.codurance.cerebro.controllers
 
-import com.codurance.cerebro.security.CoduranceAuthorisation.authorise
 
-import scala.Predef._
 
-class MainController extends BaseController {
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.controllers</span>
 
-    get("/") {
-        display("main")
-    }
+<span class="k">import</span> <span class="nn">com.codurance.cerebro.security.CoduranceAuthorisation.authorise</span>
 
-    get("/main") {
-        display("main")
-    }
+<span class="k">import</span> <span class="nn">scala.Predef._</span>
 
-    get("/signin") {
-        display("signin", "originalUri" -&gt; request.getParameter("originalUri"))
-    }
+<span class="k">class</span> <span class="nc">MainController</span> <span class="k">extends</span> <span class="nc">BaseController</span> <span class="o">{</span>
 
-    get("/not-authorised") {
-        display("not-authorised")
-    }
+    <span class="n">get</span><span class="o">(</span><span class="s">&quot;/&quot;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">display</span><span class="o">(</span><span class="s">&quot;main&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
 
-    post("/authorise") {
-        val authCode: String = params.getOrElse("authCode", halt(400))
-        authorise(authCode)
-    }
+    <span class="n">get</span><span class="o">(</span><span class="s">&quot;/main&quot;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">display</span><span class="o">(</span><span class="s">&quot;main&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
 
-}
-</code></pre>
+    <span class="n">get</span><span class="o">(</span><span class="s">&quot;/signin&quot;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">display</span><span class="o">(</span><span class="s">&quot;signin&quot;</span><span class="o">,</span> <span class="s">&quot;originalUri&quot;</span> <span class="o">-&gt;</span> <span class="n">request</span><span class="o">.</span><span class="n">getParameter</span><span class="o">(</span><span class="s">&quot;originalUri&quot;</span><span class="o">))</span>
+    <span class="o">}</span>
+
+    <span class="n">get</span><span class="o">(</span><span class="s">&quot;/not-authorised&quot;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">display</span><span class="o">(</span><span class="s">&quot;not-authorised&quot;</span><span class="o">)</span>
+    <span class="o">}</span>
+
+    <span class="n">post</span><span class="o">(</span><span class="s">&quot;/authorise&quot;</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">authCode</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">getOrElse</span><span class="o">(</span><span class="s">&quot;authCode&quot;</span><span class="o">,</span> <span class="n">halt</span><span class="o">(</span><span class="mi">400</span><span class="o">))</span>
+        <span class="n">authorise</span><span class="o">(</span><span class="n">authCode</span><span class="o">)</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div>
+
 
 <p>The MainController responds to "/authorise", which invokes the authorisation function defined inside CoduranceAuthorisation. Note that we receive the "authCode" from the Google+ authentication. Once the user was authenticated, we had to make the application available just for users using a Codurance email. For that, we had to invoke the <a href="https://developers.google.com/+/api/latest/people">Google+ People API</a> to get more information (email address, domain, etc).</p>
 
 <p>The authorise function would then check if the user belongs to the Codurance domain and add her to the session.</p>
 
-<pre><code class="scala">package com.codurance.cerebro.security
+<div class="highlight"><pre><code class="scala"><span class="k">package</span> <span class="nn">com.codurance.cerebro.security</span>
 
-import java.net.URL
-import javax.servlet.http.{HttpSession, HttpServletResponse, HttpServletRequest}
-import javax.servlet.http.HttpServletResponse._
+<span class="k">import</span> <span class="nn">java.net.URL</span>
+<span class="k">import</span> <span class="nn">javax.servlet.http.</span><span class="o">{</span><span class="nc">HttpSession</span><span class="o">,</span> <span class="nc">HttpServletResponse</span><span class="o">,</span> <span class="nc">HttpServletRequest</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">javax.servlet.http.HttpServletResponse._</span>
 
-import com.google.api.client.googleapis.auth.oauth2.{GoogleAuthorizationCodeTokenRequest, GoogleTokenResponse}
-import com.google.api.client.http.javanet.NetHttpTransport
-import com.google.api.client.json.jackson.JacksonFactory
-import com.stackmob.newman._
-import com.stackmob.newman.dsl._
+<span class="k">import</span> <span class="nn">com.google.api.client.googleapis.auth.oauth2.</span><span class="o">{</span><span class="nc">GoogleAuthorizationCodeTokenRequest</span><span class="o">,</span> <span class="nc">GoogleTokenResponse</span><span class="o">}</span>
+<span class="k">import</span> <span class="nn">com.google.api.client.http.javanet.NetHttpTransport</span>
+<span class="k">import</span> <span class="nn">com.google.api.client.json.jackson.JacksonFactory</span>
+<span class="k">import</span> <span class="nn">com.stackmob.newman._</span>
+<span class="k">import</span> <span class="nn">com.stackmob.newman.dsl._</span>
 
-import scala.concurrent.Await
-import scala.concurrent.duration._
+<span class="k">import</span> <span class="nn">scala.concurrent.Await</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
 
-object CoduranceAuthorisation {
+<span class="k">object</span> <span class="nc">CoduranceAuthorisation</span> <span class="o">{</span>
 
-    implicit val httpClient = new ApacheHttpClient
+    <span class="k">implicit</span> <span class="k">val</span> <span class="n">httpClient</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">ApacheHttpClient</span>
 
-    val GOOGLE_PLUS_PEOPLE_URL = "https://www.googleapis.com/plus/v1/people/me?fields=aboutMe%2Ccover%2FcoverPhoto%2CdisplayName%2Cdomain%2Cemails%2Clanguage%2Cname&amp;access_token="
-    val CLIENT_ID: String = "&lt;&lt;YOUR_CLIENT_ID&gt;&gt;"
-    val CLIENT_SECRET = "&lt;&lt;YOUR_CLIENT_SECRET&gt;&gt;"
-    val API_KEY = "&lt;&lt;YOUR_API_KEY&gt;&gt;"
-    val APPLICATION_NAME = "&lt;&lt;YOUR_APP_NAME&gt;&gt;"
-    val JSON_FACTORY = new JacksonFactory()
-    val TRANSPORT = new NetHttpTransport()
+    <span class="k">val</span> <span class="nc">GOOGLE_PLUS_PEOPLE_URL</span> <span class="k">=</span> <span class="s">&quot;https://www.googleapis.com/plus/v1/people/me?fields=aboutMe%2Ccover%2FcoverPhoto%2CdisplayName%2Cdomain%2Cemails%2Clanguage%2Cname&amp;access_token=&quot;</span>
+    <span class="k">val</span> <span class="nc">CLIENT_ID</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">&quot;&lt;&lt;YOUR_CLIENT_ID&gt;&gt;&quot;</span>
+    <span class="k">val</span> <span class="nc">CLIENT_SECRET</span> <span class="k">=</span> <span class="s">&quot;&lt;&lt;YOUR_CLIENT_SECRET&gt;&gt;&quot;</span>
+    <span class="k">val</span> <span class="nc">API_KEY</span> <span class="k">=</span> <span class="s">&quot;&lt;&lt;YOUR_API_KEY&gt;&gt;&quot;</span>
+    <span class="k">val</span> <span class="nc">APPLICATION_NAME</span> <span class="k">=</span> <span class="s">&quot;&lt;&lt;YOUR_APP_NAME&gt;&gt;&quot;</span>
+    <span class="k">val</span> <span class="nc">JSON_FACTORY</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">JacksonFactory</span><span class="o">()</span>
+    <span class="k">val</span> <span class="nc">TRANSPORT</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">NetHttpTransport</span><span class="o">()</span>
 
-    def authorise(authCode: String)(implicit session: HttpSession, response: HttpServletResponse): Unit = {
-        val user = userFor(authCode)
-        user.domain match {
-            case Some(Domain("codurance.com")) =&gt; {
-                session.setAttribute("user", user)
-                response.setStatus(SC_OK)
-            }
-            case _ =&gt; response.setStatus(SC_UNAUTHORIZED)
-        }
-    }
+    <span class="k">def</span> <span class="n">authorise</span><span class="o">(</span><span class="n">authCode</span><span class="k">:</span> <span class="kt">String</span><span class="o">)(</span><span class="k">implicit</span> <span class="n">session</span><span class="k">:</span> <span class="kt">HttpSession</span><span class="o">,</span> <span class="n">response</span><span class="k">:</span> <span class="kt">HttpServletResponse</span><span class="o">)</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">user</span> <span class="k">=</span> <span class="n">userFor</span><span class="o">(</span><span class="n">authCode</span><span class="o">)</span>
+        <span class="n">user</span><span class="o">.</span><span class="n">domain</span> <span class="k">match</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="nc">Some</span><span class="o">(</span><span class="nc">Domain</span><span class="o">(</span><span class="s">&quot;codurance.com&quot;</span><span class="o">))</span> <span class="k">=&gt;</span> <span class="o">{</span>
+                <span class="n">session</span><span class="o">.</span><span class="n">setAttribute</span><span class="o">(</span><span class="s">&quot;user&quot;</span><span class="o">,</span> <span class="n">user</span><span class="o">)</span>
+                <span class="n">response</span><span class="o">.</span><span class="n">setStatus</span><span class="o">(</span><span class="nc">SC_OK</span><span class="o">)</span>
+            <span class="o">}</span>
+            <span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="n">response</span><span class="o">.</span><span class="n">setStatus</span><span class="o">(</span><span class="nc">SC_UNAUTHORIZED</span><span class="o">)</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
 
-    def userFor(authCode: String): User = {
-        val tokenResponse: GoogleTokenResponse =
-            new GoogleAuthorizationCodeTokenRequest(
-                TRANSPORT, JSON_FACTORY, CLIENT_ID, CLIENT_SECRET, authCode, "postmessage"
-            ).execute
-        val url = new URL(GOOGLE_PLUS_PEOPLE_URL + tokenResponse.getAccessToken)
-        val userInfo = Await.result(GET(url).apply, 10.seconds)
-        GooglePlusJSONResponseParser.toUser(userInfo.bodyString, tokenResponse.toString)
-    }
+    <span class="k">def</span> <span class="n">userFor</span><span class="o">(</span><span class="n">authCode</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">User</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">tokenResponse</span><span class="k">:</span> <span class="kt">GoogleTokenResponse</span> <span class="o">=</span>
+            <span class="k">new</span> <span class="nc">GoogleAuthorizationCodeTokenRequest</span><span class="o">(</span>
+                <span class="nc">TRANSPORT</span><span class="o">,</span> <span class="nc">JSON_FACTORY</span><span class="o">,</span> <span class="nc">CLIENT_ID</span><span class="o">,</span> <span class="nc">CLIENT_SECRET</span><span class="o">,</span> <span class="n">authCode</span><span class="o">,</span> <span class="s">&quot;postmessage&quot;</span>
+            <span class="o">).</span><span class="n">execute</span>
+        <span class="k">val</span> <span class="n">url</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">URL</span><span class="o">(</span><span class="nc">GOOGLE_PLUS_PEOPLE_URL</span> <span class="o">+</span> <span class="n">tokenResponse</span><span class="o">.</span><span class="n">getAccessToken</span><span class="o">)</span>
+        <span class="k">val</span> <span class="n">userInfo</span> <span class="k">=</span> <span class="nc">Await</span><span class="o">.</span><span class="n">result</span><span class="o">(</span><span class="nc">GET</span><span class="o">(</span><span class="n">url</span><span class="o">).</span><span class="n">apply</span><span class="o">,</span> <span class="mf">10.</span><span class="n">seconds</span><span class="o">)</span>
+        <span class="nc">GooglePlusJSONResponseParser</span><span class="o">.</span><span class="n">toUser</span><span class="o">(</span><span class="n">userInfo</span><span class="o">.</span><span class="n">bodyString</span><span class="o">,</span> <span class="n">tokenResponse</span><span class="o">.</span><span class="n">toString</span><span class="o">)</span>
+    <span class="o">}</span>
 
-}
-</code></pre>
+<span class="o">}</span>
+</code></pre></div>
+
 
 <p><strong>Note</strong> that in the GOOGLE_PLUS_PEOPLE_URL we specify all the fields we are interested in, including the <em>domain</em> and <em>emails</em>.</p>
 
@@ -365,29 +373,33 @@ object CoduranceAuthorisation {
 
 <p><strong>IMPORTANT:</strong> Don't forget to import add the Google+ APIs to your sbt build file.</p>
 
-<pre><code>    "com.google.apis" % "google-api-services-oauth2" % "v2-rev59-1.17.0-rc",
-    "com.google.apis" % "google-api-services-plus" % "v1-rev115-1.17.0-rc",
-</code></pre>
+<div class="highlight"><pre><code class="scala">    <span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-oauth2&quot;</span> <span class="o">%</span> <span class="s">&quot;v2-rev59-1.17.0-rc&quot;</span><span class="o">,</span>
+    <span class="s">&quot;com.google.apis&quot;</span> <span class="o">%</span> <span class="s">&quot;google-api-services-plus&quot;</span> <span class="o">%</span> <span class="s">&quot;v1-rev115-1.17.0-rc&quot;</span><span class="o">,</span>
+</code></pre></div>
+
 
 <p>That's about it. You now can display the name of the user on all your pages, using a default layout.</p>
 
-<pre><code class="jade">-@ val title: String
--@ val headline: String = title
--@ val body: String
--@ val user: com.codurance.cerebro.security.User
+<div class="highlight"><pre><code class="scala"><span class="o">-@</span> <span class="k">val</span> <span class="n">title</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">-@</span> <span class="k">val</span> <span class="n">headline</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="n">title</span>
+<span class="o">-@</span> <span class="k">val</span> <span class="n">body</span><span class="k">:</span> <span class="kt">String</span>
+<span class="o">-@</span> <span class="k">val</span> <span class="n">user</span><span class="k">:</span> <span class="kt">com.codurance.cerebro.security.User</span>
 
-!!!
-html
-    head
-        title= title
-    body
-        header
-            div
-                span Hello #{user.name.displayName}
-        div
-            h1= headline
-            != body
-</code></pre>
+<span class="o">!!!</span>
+<span class="n">html</span>
+    <span class="n">head</span>
+        <span class="n">title</span><span class="k">=</span> <span class="n">title</span>
+    <span class="n">body</span>
+        <span class="n">header</span>
+            <span class="n">div</span>
+                <span class="n">span</span> <span class="nc">Hello</span> <span class="o">#{</span><span class="n">user</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">displayName</span><span class="o">}</span>
+        <span class="n">div</span>
+            <span class="n">h1</span><span class="k">=</span> <span class="n">headline</span>
+            <span class="o">!=</span> <span class="n">body</span>
+</code></pre></div>
+
+
+
 
 
         
