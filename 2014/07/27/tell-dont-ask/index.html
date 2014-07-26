@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Codurance - Tell don't ask</title>
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/codurance/app.css">
+    <link rel="stylesheet" href="/assets/css/headers/header1.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" href="/assets/css/pages/blog.css">
+    <link rel="stylesheet" href="/assets/css/pages/page_magazine.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+
+    
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46289079-1', 'codurance.com');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+<div class="top">
+    <div class="container">
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img id="logo-header" src="/assets/img/logo1-orange.png" height="45" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/casestudies">Case Studies</a></li>
+                    <li><a href="/videos">Videos</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/careers/craftsman">Careers</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                        <li><a href="/aboutus/ourteam">Our Team</a></li>
+                        <li><a href="/aboutus/ourcompany">Our Company</a></li>
+                        <li><a href="/aboutus/ourpractices">Our Practices</a></li>
+                    </ul></li>
+                </ul>
+                <div class="search-open">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn-u" type="button">Go</button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div><!-- /navbar-collapse -->
+        </div>
+    </div>
+</div><!--/header-->
+
+
+
+<!--=== End Header ===-->
+
+
+<div class="breadcrumbs margin-bottom-10">
+    <div class="container">
+        <h2 class="pull-left">Tell don't ask</h2>
+        <ul class="pull-right breadcrumb">
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/blog">Blog</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<!--=== Content Part ===-->
+<div class="container">
+<div class="row blog-page blog-item">
+<!-- Left Sidebar -->
+<div class="col-md-9 md-margin-bottom-60">
+    <!--Blog Post-->
+    <div class="blog margin-bottom-40">
+        
+        <div class="blog-post-tags">
+            <ul class="list-unstyled list-inline blog-info">
+                <li><i class="icon-calendar"></i> 27 Jul 2014</li>
+                <li><i class="icon-pencil"></i> Mashooq Badar</li>
+            </ul>
+        </div>
+        
+
+        <p><strong>Tell don't ask</strong> we have all heard it. Yet it is one of the most violated principles. It is also one of the most important principles to follow if you want a design that is flexible to change.</p>
+
+<p>I have often heard people say, <strong>"... but it makes Test driving very hard"</strong>. I disagree - what it does is stop you from testing at too granular a level and focus on testing behaviours rather than interactions.</p>
+
+<p>Enough postulating ... here is an example taken from my current work. You have an interface to an external system - you have nicely encapsulated it into your own class and throw an exception if, for example, there are infra level issues. Once the exception is raised - you let it percolate to the top and create an alert to inform operations.</p>
+
+<p>The diagram below depicts a more usual approach I've seen:</p>
+
+<p><img src="/assets/img/blog/ask-not-tell.png" alt="Ask! not tell" /></p>
+
+<p>Chances are that we test drove the <em>Infra Service</em> knowing that it needs to have all the right details required for us to raise the <em>Alert</em>. However, we are not testing that the right Alert is created because that is not the responsibility of the <em>Infra Service</em>. Hence we poke a few holes in the <em>Infra Exception</em> class and assert that the exception is created with the right details.</p>
+
+<p>Once we move to implementing the <em>A Service</em> we have all the relevant details exposed from the exception so we retrieve these details and create the <em>Alert</em>. Interesting that the real behaviour here is:</p>
+
+<blockquote><p>create alert with the right details if there is an infra error</p></blockquote>
+
+<p><strong>not</strong></p>
+
+<blockquote><p>create exception with the right details if there is an infra error and then create alert from exception with the right details</p></blockquote>
+
+<p>Now lets looks at the alternative. Lets say we drove the test from the outside, i.e. <em>A Service</em>, and did not mock the <em>Infra Service</em> but instead mocked the <em>External System API</em>.</p>
+
+<p><img src="/assets/img/blog/tell-dont-ask.png" alt="Tell! don't ask" /></p>
+
+<p>We end up with a tell-don't-ask approach where we are testing that the right <em>Alert</em> is created when there is an infra error. We also end up with fewer interactions and a more flexible design. If for example we decided to encapsulate the external system some other way, our tests will not need to change.</p>
+
+<p>Although testing at this level provides us with far less brittle tests, the disadvantage is that parts of the implementation is further way. On the other hand there are far fewer reasons why a test may break during refactoring.</p>
+
+<p>Finding the right level to test is not a science. We need to take complexity of the unit-under-test into account. The rule of the thumb is that we should test from outside and mock external boundaries until the tests get too complex and only then get more granular for the more complex parts striving to maintain flexible tests and simple design.</p>
+
+
+        
+    </div>
+    <!--End Blog Post-->
+</div>
+<!-- End Left Sidebar -->
+
+<!-- Right Sidebar -->
+<div class="col-md-3 magazine-page">
+    <!-- Blog Latest Tweets -->
+    <div class="blog-twitter margin-bottom-30">
+        <a class="twitter-timeline" href="https://twitter.com/mashooq/codurance" data-widget-id="400789734676385792">Tweets from Codurance team</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <!-- End Blog Latest Tweets -->
+</div>
+<!-- End Right Sidebar -->
+</div>
+<!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+
+<!--=== Copyright ===-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="copyright-space">
+                    2013 &copy; Codurance LTD.
+                     | Company Registration No: 8712584
+                     | Contact us: <a href="mailto:hello@codurance.com" class="">hello@codurance.com</a>
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <ul class="social-icons pull-right">
+                    <li><a href="/atom.xml" data-original-title="Feed" class="social_rss"></a></li>
+                    <li><a href="http://twitter.com/codurance" data-original-title="Twitter" class="social_twitter"></a></li>
+                </ul>
+            </div>
+        </div> <!--/row-->
+    </div> <!--/container-->
+</div><!--/copyright-->
+
+<!--=== End Copyright ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/assets/plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/hover-dropdown.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+        App.initSliders();
+        Index.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.js"></script>
+<![endif]-->
+
+</body>
+</html>

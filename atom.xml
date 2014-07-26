@@ -3,13 +3,25 @@
     <title>Codurance</title>
     <link href="//atom.xml" rel="self"/>
     <link href="/"/>
-    <updated>2014-07-21T22:49:08+00:00</updated>
+    <updated>2014-07-26T23:22:10+00:00</updated>
     <id>http://codurance.com</id>
     <author>
         <name>Codurance</name>
         <email>hello@codurance.com</email>
     </author>
     <rights>Copyright (c) Codurance</rights>
+    
+    <entry>
+        <id>/2014/07/27/tell-dont-ask/</id>
+        <title>Tell don't ask</title>
+        <link href="/2014/07/27/tell-dont-ask/"/>
+        <published>2014-07-27T12:00:00+00:00</published>
+        
+        <summary type="html">&lt;p&gt;&lt;strong&gt;Tell don&#39;t ask&lt;/strong&gt; we have all heard it. Yet it is one of the most violated principles. It is also one of the most important principles to follow if you want a design that is flexible to change.&lt;/p&gt;
+
+</summary>
+        
+    </entry>
     
     <entry>
         <id>/2014/07/18/queue-based-synchronisation/</id>
@@ -182,19 +194,6 @@ favourite bands were. &quot;&lt;a href=&quot;http://en.wikipedia.org/wiki/Legi%C
 Urbana&lt;/a&gt;&quot; is my
 favourite Brazilian band I said. &quot;Seriously?&quot; he said with a puzzled
 face. &quot;They are rubbish, man.&quot;&lt;/p&gt;
-
-</summary>
-        
-    </entry>
-    
-    <entry>
-        <id>/2013/07/29/my-birthday-wish-list/</id>
-        <title>My birthday wish list</title>
-        <link href="/2013/07/29/my-birthday-wish-list/"/>
-        <published>2013-07-29T23:46:00+00:00</published>
-        
-        <summary type="html">&lt;p&gt;Today is my birthday. Yay! And since today is all about me, I will
-choose what I want as a present. As a developer, here&#39;s what I want:&lt;/p&gt;
 
 </summary>
         
