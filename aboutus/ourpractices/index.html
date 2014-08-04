@@ -3,50 +3,48 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Codurance - Our Practices</title>
+<title>Codurance - Our Practices</title>
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <!-- CSS Global Compulsory-->
-    <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/codurance/app.css">
-    <link rel="stylesheet" href="/assets/css/headers/header1.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
-    <link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
-    <link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
-    <link rel="stylesheet" href="assets/css/pages/page_404_error.css">
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
-    <link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+<!-- CSS Global Compulsory-->
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
+<link rel="stylesheet" href="/assets/css/headers/header1.css">
+<link rel="stylesheet" href="/assets/css/pages/page_one.css">
+<!-- CSS Implementing Plugins -->
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+<link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
+<link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
+<link rel="stylesheet" href="assets/css/pages/page_404_error.css">
+<link rel="stylesheet" href="/assets/css/syntax.css">
+<!-- CSS Theme -->
+<link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
+<link rel="stylesheet" href="/assets/css/themes/headers/header1-orange.css" id="style_color-header-1">
+<!-- Custom -->
+<link rel="stylesheet" href="/assets/css/codurance/app.css">
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-46289079-1', 'codurance.com');
-        ga('send', 'pageview');
 
-    </script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46289079-1', 'codurance.com');
+    ga('send', 'pageview');
+</script>
+
 </head>
 
 <body>
-<div class="top">
-    <div class="container">
-    </div>
-</div><!--/top-->
-<!--=== End Top ===-->
-
 <!--=== Header ===-->
 <div class="header">
     <div class="navbar navbar-default" role="navigation">
@@ -72,7 +70,7 @@
                     <li><a href="/videos">Videos</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/careers/craftsman">Careers</a></li>
-                    <li class="dropdown active"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
+                    <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" data-delay="0" data-close-others="false">About Us <i class="icon-angle-down">&nbsp;</i></a><ul class="dropdown-menu">
                         <li><a href="/aboutus/ourteam">Our Team</a></li>
                         <li><a href="/aboutus/ourcompany">Our Company</a></li>
                         <li class="active"><a href="/aboutus/ourpractices">Our Practices</a></li>
@@ -96,15 +94,21 @@
 <!--=== End Header ===-->
 
 
-    
-<div class="breadcrumbs margin-bottom-40">
-    <div class="container">
-        <h1 class="pull-left">Our Practices</h1>
-        <ul class="pull-right breadcrumb">
-            <li><a href="/">Home</a></li>
-        </ul>
+    <div class="breadcrumbs margin-bottom-10">
+        <div class="container">
+            <h2 class="pull-left">Our Practices</h2>
+            <ul class="pull-right breadcrumb">
+                <li><a href="/">Home</a></li>
+                
+                    <li>
+                    
+                        About Us
+                    
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-</div>
 
 
 
@@ -288,7 +292,7 @@
 <script type="text/javascript" src="/assets/js/pages/index.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
-      	App.init();
+        App.init();
         App.initSliders();
         Index.initParallaxSlider();
     });

@@ -1,5 +1,6 @@
-@import url('../style.css');
-@import url('../app.css');
+body {
+  padding-top: 8px;
+}
 .standout {
   color: #e67e22;
 }
