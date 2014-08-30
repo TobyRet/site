@@ -17,12 +17,13 @@
 <link rel="stylesheet" href="/assets/css/responsive.css">
 <link rel="stylesheet" href="/assets/css/headers/header1.css">
 <link rel="stylesheet" href="/assets/css/pages/page_one.css">
+<link rel="stylesheet" href="/assets/css/pages/page_contact.css">
 <!-- CSS Implementing Plugins -->
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
 <link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
 <link rel="stylesheet" href="/assets/css/pages/portfolio-v1.css">
-<link rel="stylesheet" href="assets/css/pages/page_404_error.css">
+<link rel="stylesheet" href="/assets/css/pages/page_404_error.css">
 <link rel="stylesheet" href="/assets/css/syntax.css">
 <!-- CSS Theme -->
 <link rel="stylesheet" href="/assets/css/themes/orange.css" id="style_color">
@@ -112,10 +113,14 @@
 
 
 
-<div class="container">
+<!--=== Content Part ===-->
+<div class="container content">
+    <div id="map" class="map">
+    </div><!---/map-->
+
     <div class="row margin-bottom-30">
-        <div class="col-md-8 md-margin-bottom-40">
-            <h4 class="color-orange">Who are we?</h4>
+        <div class="col-md-9 mb-margin-bottom-30">
+            <div class="headline"><h2>Who are we?</h2></div>
 
             <p><b>We are software craftsmen.</b> We build well-crafted software to our customers, we help developers to get better at their craft through training, coaching and mentoring, and we help companies to get better at delivering software.</p>
 
@@ -124,10 +129,22 @@
             <p><b>We have values.</b> We don't negotiate on quality. We use Agile methodologies and Extreme Programming practices, like Test-Driven Development, Simple Design, Pair-Programming and Continuous Integration, in all our projects.</p>
 
             <p><b>We master our skills and tools.</b> We work hard to be the best we can be, constantly practicing, learning, and sharing. All our craftsmen have dedicated time for learning and are very active in external <a href="http://londonswcraft.com">technical communities</a>.</p>
+        </div><!--/col-md-9-->
 
-            <br />
-            <br />
-            <h4 class="color-orange">Software Craftsmanship</h4>
+        <div class="col-md-3">
+            <!-- Contacts -->
+            <div class="headline"><h2>Contacts</h2></div>
+            <ul class="list-unstyled who margin-bottom-30">
+                <li><a href="#">Codurance Ltd</a></li>
+                <li><a href="#">200 Aldersgate, London</a></li>
+                <li><a href="#">EC1A 4HD</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>hello@codurance.com</a></li>
+            </ul>
+        </div><!--/col-md-3-->
+    </div><!--/row-->
+    <div class="row margin-bottom-30">
+        <div class="col-md-9 mb-margin-bottom-30">
+            <div class="headline"><h2>Software Craftsmanship</h2></div>
 
             <p>Software Craftsmanship principles are at the heart of our company. Software Craftsmanship
                 is a movement that aims to bring professionalism to our industry. It's main principles are highlighted in the Software Craftsmanship manifesto:</p>
@@ -145,11 +162,9 @@
                 Our wide-ranging expertise in technologies and practices ensure that the right decisions are made
                 especially during the early phases of a project.
             </p>
-
-            <p><b>Contact us at <a class="color-orange" href="mailto:hello@codurance.com">hello@codurance.com</a></b></p>
         </div>
-
-        <div class="col-sm-4">
+        <div class="col-md-3">
+            <div class="headline"><h2>  </h2></div>
             <div class="view view-tenth">
                 <img class="img-responsive" src="/assets/img/socrabook.png" alt="">
 
@@ -160,9 +175,9 @@
                     <a href="https://leanpub.com/socra" class="info">Read More</a>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </div><!--/col-md-3-->
+    </div><!--/row-->
+</div><!--/container-->
 
 
 <!--=== Copyright ===-->
@@ -199,14 +214,18 @@
 <script type="text/javascript" src="/assets/plugins/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/modernizr.js"></script>
 <script type="text/javascript" src="/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="/assets/plugins/gmap/gmap.js"></script>
 <!-- JS Page Level -->
 <script type="text/javascript" src="/assets/js/app.js"></script>
 <script type="text/javascript" src="/assets/js/pages/index.js"></script>
+<script type="text/javascript" src="/assets/js/pages/contact.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
         App.initSliders();
         Index.initParallaxSlider();
+        Contact.initMap();
     });
 </script>
 <!--[if lt IE 9]>
